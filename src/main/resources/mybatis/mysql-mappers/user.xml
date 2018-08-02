@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="my-user">
+
+<insert id="pushUserInfo" parameterType="UsersVo">
+    <![CDATA[
+    insert into Users(User_no, LoginID, Password, NameHan, NameEng, Gender, StudResNum, HomePage, Email, FamilyAddress, PostNum,
+                        Address, Telephone, Cellphone, Language, MillArm, MillRank, MillEnrollDate, MillDischargeDate, MillIncompletReason,
+                        LearningContent, Thesis, ConsultContent, BirthDate)
+                        values (#{user_no}, #{loginID}, #{password}, #{nameHan}, #{nameEng}, #{gender}, #{studResNum}, #{homePage}, #{email}, #{familyAddress}, #{postNum},
+                        #{address}, #{telephone}, #{cellphone}, #{language}, #{millArm}, #{millRank}, #{millEnrollDate}, #{millDischargeDate}, #{millIncompletReason},
+                        #{learningContent}, #{thesis}, #{consultContent}, #{birthDate})
+    ]]>
+
+</insert>
+
+
+</mapper>

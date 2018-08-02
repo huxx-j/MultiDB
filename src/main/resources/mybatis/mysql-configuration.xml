@@ -5,9 +5,12 @@
 
 <configuration>
     <typeAliases>
-        <!--<typeAlias alias="AfterServiceVo" type="com.bitacademy.vo.AfterServiceVo"/>-->
+        <typeAlias alias="UsersVo" type="com.bitacademy.vo.UsersVo"/>
+        <typeAlias alias="CompanyVo" type="com.bitacademy.vo.CompanyVo"/>
     </typeAliases>
     <mappers>
-        <mapper resource="mybatis/mysql-mappers/mysql-test.xml"/>
+        <!--<mapper resource="mybatis/mysql-mappers/mysql-test.xml"/>-->
+        <mapper resource="mybatis/mysql-mappers/user.xml"/>
+        <mapper resource="mybatis/mysql-mappers/company.xml"/>
     </mappers>
 </configuration>

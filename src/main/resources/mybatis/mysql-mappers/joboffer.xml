@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="my-joboffer">
+    <resultMap id="rm" type="CompanyVo">
+        <result column="CompSeqNum" property="company_no"/>
+        <result column="CompName" property="compName"/>
+        <result column="StockMarket" property="stockMarket"/>
+        <result column="Address" property="address"/>
+        <result column="Tel" property="tel"/>
+        <result column="Business" property="business"/>
+        <result column="Capital" property="capital"/>
+        <result column="YearSell" property="yearSell"/>
+        <result column="StaffNum" property="staffNum"/>
+        <result column="HomePage" property="homePage"/>
+        <result column="PostCode" property="postCode"/>
+        <result column="Introduct" property="introduction"/>
+    </resultMap>
+
+    <select id="getCompanyInfo" parameterType="HashMap" resultMap="rm">
+        <![CDATA[
+
+        ]]>
+
+
+    </select>
+</mapper>

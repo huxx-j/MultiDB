@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ms-company">
+    <resultMap id="rm" type="CompanyVo">
+        <result column="CompSeqNum" property="company_no"/>
+        <result column="CompName" property="compName"/>
+        <result column="StockMarket" property="stockMarket"/>
+        <result column="Address" property="address"/>
+        <result column="Tel" property="tel"/>
+        <result column="Business" property="business"/>
+        <result column="Capital" property="capital"/>
+        <result column="YearSell" property="yearSell"/>
+        <result column="StaffNum" property="staffNum"/>
+        <result column="HomePage" property="homePage"/>
+        <result column="PostCode" property="postCode"/>
+        <result column="Introduct" property="introduction"/>
+    </resultMap>
+
+    <select id="getCompanyInfo" parameterType="HashMap" resultMap="rm">
+        <![CDATA[
+                SELECT CompSeqNum, CompName, StockMarket, Address, Tel, Business,
+                        Capital, YearSell, StaffNum, HomePage, PostCode, Introduct
+                from (
+                       SELECT ROW_NUMBER() over (order by CompSeqNum) as seq,
+                               CompSeqNum, CompName, StockMarket, Address, Tel,
+                               Business, Capital, YearSell, StaffNum, HomePage,
+                               PostCode, Introduct
+                       from dbo.Company) a
+                       where seq
+                       between #{start} and #{end}
+        ]]>
+
+
+    </select>
+</mapper>

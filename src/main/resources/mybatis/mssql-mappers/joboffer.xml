@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ms-joboffer">
+    <resultMap id="rm" type="CompanyVo">
+        <result column="CompSeqNum" property="company_no"/>
+        <result column="RecruitStaffNum" property="hireCnt" />
+        <result column="DevelopLang" property="useLang" />
+        <result column="DevelopOS" property="useOS" />
+        <result column="DevelopDB" property="useDB" />
+        <result column="Career" property="career" />
+        <result column="Qualification" property="requirement" />
+        <result column="AnnualSalary" property="yearIncome" />
+        <result column="QualiMajor" property="major" />
+        <result column="Preference" property="advantage" />
+        <result column="JobType" property="contractType" />
+        <result column="Department" property="field" />
+        <result column="SelectStep" property="procedure" />
+        <result column="Paper" property="reqDocument" />
+        <result column="Need" property="reqDetail" />
+        <result column="ChargeTel" property="telephone" />
+        <result column="ChargeFax" property="fax" />
+        <result column="ChargeHandphone" property="handPhone" />
+        <result column="ChargeEmail" property="email" />
+        <result column="ChargeName" property="name" />
+        <result column="ChargeDept" property="department" />
+        <result column="ChargeTitle" property="position" />
+        <result column="Note" property="etc" />
+        <result column="IsShow" property="post" />
+        <result column="RequestDate" property="requestDate" />
+    </resultMap>
+
+    <select id="getCompanyInfo" parameterType="HashMap" resultMap="rm">
+        <![CDATA[
+
+        ]]>
+
+
+    </select>
+</mapper>

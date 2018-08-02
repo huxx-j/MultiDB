@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ms-user">
+    <resultMap id="rm" type="UsersVo">
+        <result column="StudID" property="user_no" />
+        <result column="LoginID" property="loginID" />
+        <result column="Password" property="password" />
+        <result column="NameHan" property="nameHan" />
+        <result column="NameEng" property="nameEng" />
+        <result column="Sex" property="gender" />
+        <result column="StudResNum" property="studResNum" />
+        <result column="HomePage" property="homePage" />
+        <result column="Email" property="email" />
+        <result column="Address" property="familyAddress" />
+        <result column="NowPostNum" property="postNum" />
+        <result column="NowAddress" property="address" />
+        <result column="Telephone" property="telephone" />
+        <result column="Handphone" property="cellphone" />
+        <result column="LangType" property="language" />
+        <result column="MilArm" property="millArm" />
+        <result column="MilRank" property="millRank" />
+        <result column="MilEnrollDate" property="millEnrollDate" />
+        <result column="MilDischargeDate" property="millDischargeDate" />
+        <result column="MilIncompletReason" property="millIncompletReason" />
+        <result column="StudyContents" property="learningContent" />
+        <result column="Paper" property="thesis" />
+        <result column="Memo" property="consultContent" />
+        <result column="BirthDate" property="birthDate" />
+    </resultMap>
+
+    <select id="getUserInfo" parameterType="HashMap" resultMap="rm">
+        <![CDATA[
+                 select StudID, LoginID, Password, NameHan, NameEng, Sex, StudResNum,
+                         HomePage, Email, Address, NowPostNum, NowAddress, Telephone,
+                         Handphone, LangType, MilArm, MilRank, MilEnrollDate, MilDischargeDate,
+                         MilIncompletReason, StudyContents, Paper, Memo, BirthDate
+                 from(
+                       select ROW_NUMBER() over (order by StudID) as seq, StudID, LoginID,
+                               Password, NameHan, NameEng, Sex, StudResNum, HomePage, Email,
+                               Address, NowPostNum, NowAddress, Telephone, Handphone, LangType,
+                               MilArm, MilRank, MilEnrollDate, MilDischargeDate, MilIncompletReason,
+                               StudyContents, Paper, Memo, BirthDate
+                       from dbo.Member) a
+                       where seq
+                       between #{start} and #{end};
+        ]]>
+
+
+    </select>
+</mapper>
