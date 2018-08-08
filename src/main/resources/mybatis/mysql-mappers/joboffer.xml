@@ -3,26 +3,28 @@
 
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="my-joboffer">
-    <resultMap id="rm" type="CompanyVo">
-        <result column="CompSeqNum" property="company_no"/>
-        <result column="CompName" property="compName"/>
-        <result column="StockMarket" property="stockMarket"/>
-        <result column="Address" property="address"/>
-        <result column="Tel" property="tel"/>
-        <result column="Business" property="business"/>
-        <result column="Capital" property="capital"/>
-        <result column="YearSell" property="yearSell"/>
-        <result column="StaffNum" property="staffNum"/>
-        <result column="HomePage" property="homePage"/>
-        <result column="PostCode" property="postCode"/>
-        <result column="Introduct" property="introduction"/>
-    </resultMap>
 
-    <select id="getCompanyInfo" parameterType="HashMap" resultMap="rm">
+    <select id="pushJobOffer" parameterType="JobOfferVo">
         <![CDATA[
-
+                  insert into sungwoo_test.JobRequest(Company_no, HireCnt, UseLang, UseOS, UseDB,
+                  Career, Requirement, YearIncome, Major, Advantage, ContractType,
+                  Field, Procedures, ReqDocument, ReqDetail, Telephone, Fax, Cellphone, Email,
+                  Name, Department, Position, Etc, Post, ReceiptDate) values (#{company_no}, #{hireCnt}, #{useLang}, #{useOS}, #{useDB},
+                  #{career}, #{requirement}, #{yearIncome}, #{major}, #{advantage}, #{contractType},
+                  #{field}, #{procedure}, #{reqDocument}, #{reqDetail}, #{telephone}, #{fax}, #{cellphone}, #{email},
+                  #{name}, #{department}, #{position}, #{etc}, #{post}, #{receiptDate})
         ]]>
 
 
     </select>
 </mapper>
+        <!--insert into sungwoo_test.JobRequest(Commpany_no, HireCnt, UseLang, UseOS, UseDB,-->
+        <!--Career, Requirement, YearIncome, Major, Advantage,-->
+        <!--ContractType, Field, Welfare, "Procedure", ReqDocument,-->
+        <!--ReqDetail, Telephone, Fax, Cellphone, Email, Name,-->
+        <!--Department, "Position", Etc, Post, ReceiptDate)-->
+        <!--values (#{commpany_no}, #{hireCnt}, #{useLang}, #{useOS}, #{useDB},-->
+        <!--#{career}, #{requirement}, #{yearIncome}, #{major}, #{advantage},-->
+        <!--#{contractType}, #{field}, #{welfare}, #{procedure}, #{reqDocument},-->
+        <!--#{reqDetail}, #{telephone}, #{fax}, #{cellphone}, #{email}, #{name},-->
+        <!--#{department}, #{position}, #{etc}, #{post}, #{receiptDate})-->

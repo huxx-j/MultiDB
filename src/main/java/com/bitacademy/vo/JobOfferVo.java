@@ -1,8 +1,8 @@
 package com.bitacademy.vo;
 
 public class JobOfferVo {
-    private int commpany_no;
-    private int hireCnt;
+    private int company_no;
+    private String hireCnt;
     private String useLang;
     private String useOS;
     private String useDB;
@@ -20,7 +20,7 @@ public class JobOfferVo {
     private String reqDetail;
     private String telephone;
     private String fax;
-    private String handPhone;
+    private String cellphone;
     private String email;
     private String name;
     private String department;
@@ -36,8 +36,8 @@ public class JobOfferVo {
     public JobOfferVo() {
     }
 
-    public JobOfferVo(int commpany_no, int hireCnt, String useLang, String useOS, String useDB, String interviewDate, String career, String requirement, String yearIncome, String major, String advantage, String contractType, String field, String welfare, String procedure, String reqDocument, String reqDetail, String telephone, String fax, String handPhone, String email, String name, String department, String position, String etc, String post, String black, String receiptDate, String person, String recruitment, String employment) {
-        this.commpany_no = commpany_no;
+    public JobOfferVo(int commpany_no, String hireCnt, String useLang, String useOS, String useDB, String interviewDate, String career, String requirement, String yearIncome, String major, String advantage, String contractType, String field, String welfare, String procedure, String reqDocument, String reqDetail, String telephone, String fax, String handPhone, String email, String name, String department, String position, String etc, String post, String black, String receiptDate, String person, String recruitment, String employment) {
+        this.company_no = commpany_no;
         this.hireCnt = hireCnt;
         this.useLang = useLang;
         this.useOS = useOS;
@@ -56,7 +56,7 @@ public class JobOfferVo {
         this.reqDetail = reqDetail;
         this.telephone = telephone;
         this.fax = fax;
-        this.handPhone = handPhone;
+        this.cellphone = handPhone;
         this.email = email;
         this.name = name;
         this.department = department;
@@ -71,18 +71,18 @@ public class JobOfferVo {
     }
 
     public int getCommpany_no() {
-        return commpany_no;
+        return company_no;
     }
 
     public void setCommpany_no(int commpany_no) {
-        this.commpany_no = commpany_no;
+        this.company_no = commpany_no;
     }
 
-    public int getHireCnt() {
+    public String getHireCnt() {
         return hireCnt;
     }
 
-    public void setHireCnt(int hireCnt) {
+    public void setHireCnt(String hireCnt) {
         this.hireCnt = hireCnt;
     }
 
@@ -222,12 +222,12 @@ public class JobOfferVo {
         this.fax = fax;
     }
 
-    public String getHandPhone() {
-        return handPhone;
+    public String getCellphone() {
+        return cellphone;
     }
 
-    public void setHandPhone(String handPhone) {
-        this.handPhone = handPhone;
+    public void setCellphone(String cellphone) {
+        this.cellphone = cellphone;
     }
 
     public String getEmail() {
@@ -321,7 +321,7 @@ public class JobOfferVo {
     @Override
     public String toString() {
         return "JobOfferVo{" +
-                "commpany_no=" + commpany_no +
+                "commpany_no=" + company_no +
                 ", hireCnt=" + hireCnt +
                 ", useLang='" + useLang + '\'' +
                 ", useOS='" + useOS + '\'' +
@@ -340,7 +340,7 @@ public class JobOfferVo {
                 ", reqDetail='" + reqDetail + '\'' +
                 ", telephone='" + telephone + '\'' +
                 ", fax='" + fax + '\'' +
-                ", handPhone='" + handPhone + '\'' +
+                ", cellphone='" + cellphone + '\'' +
                 ", email='" + email + '\'' +
                 ", name='" + name + '\'' +
                 ", department='" + department + '\'' +

@@ -13,11 +13,13 @@ public class CompanyVo {
     private String homePage;
     private String postCode;
     private String introduction;
+    private String compResNum;
+    private String welfare;
 
     public CompanyVo() {
     }
 
-    public CompanyVo(int company_no, String compName, String stockMarket, String address, String tel, String business, String capital, String yearSell, String staffNum, String homePage, String postCode, String introduction) {
+    public CompanyVo(int company_no, String compName, String stockMarket, String address, String tel, String business, String capital, String yearSell, String staffNum, String homePage, String postCode, String introduction, String compResNum, String welfare) {
         this.company_no = company_no;
         this.compName = compName;
         this.stockMarket = stockMarket;
@@ -30,6 +32,8 @@ public class CompanyVo {
         this.homePage = homePage;
         this.postCode = postCode;
         this.introduction = introduction;
+        this.compResNum = compResNum;
+        this.welfare = welfare;
     }
 
     public int getCompany_no() {
@@ -128,6 +132,22 @@ public class CompanyVo {
         this.introduction = introduction;
     }
 
+    public String getCompResNum() {
+        return compResNum;
+    }
+
+    public void setCompResNum(String compResNum) {
+        this.compResNum = compResNum;
+    }
+
+    public String getWelfare() {
+        return welfare;
+    }
+
+    public void setWelfare(String welfare) {
+        this.welfare = welfare;
+    }
+
     @Override
     public String toString() {
         return "CompanyVo{" +
@@ -143,6 +163,8 @@ public class CompanyVo {
                 ", homePage='" + homePage + '\'' +
                 ", postCode='" + postCode + '\'' +
                 ", introduction='" + introduction + '\'' +
+                ", compResNum='" + compResNum + '\'' +
+                ", welfare='" + welfare + '\'' +
                 '}';
     }
 }

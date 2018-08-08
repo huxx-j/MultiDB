@@ -7,10 +7,10 @@
     <select id="pushCompanyInfo" parameterType="CompanyVo">
         <![CDATA[
                  insert into sungwoo_test.Company (
-                               CompName, StockMarket, Address, Tel, Business, Capital,
-                               YearSell, StaffNum, HomePage, PostCode, Introduction)
-                         values (#{compName}, #{stockMarket}, #{address}, #{tel}, #{business}, #{capital},
-                                  #{yearSell}, #{staffNum}, #{homePage}, #{postCode}, #{introduction})
+                               Company_no, CompName, StockMarket, Address, Tel, Business, Capital,
+                               YearSell, StaffNum, HomePage, PostCode, Introduction, CompResNum, Welfare)
+                         values (#{company_no}, #{compName}, #{stockMarket}, #{address}, #{tel}, #{business}, #{capital},
+                                  #{yearSell}, #{staffNum}, #{homePage}, #{postCode}, #{introduction}, #{compResNum}, #{welfare})
         ]]>
 
 

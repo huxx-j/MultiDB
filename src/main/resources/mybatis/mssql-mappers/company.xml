@@ -16,17 +16,19 @@
         <result column="HomePage" property="homePage"/>
         <result column="PostCode" property="postCode"/>
         <result column="Introduct" property="introduction"/>
+        <result column="WelFare" property="welfare"/>
+        <result column="CompResNum" property="compResNum"/>
     </resultMap>
 
     <select id="getCompanyInfo" parameterType="HashMap" resultMap="rm">
         <![CDATA[
-                SELECT CompSeqNum, CompName, StockMarket, Address, Tel, Business,
-                        Capital, YearSell, StaffNum, HomePage, PostCode, Introduct
+                SELECT CompSeqNum, CompName, StockMarket, Address, Tel, Business, CompResNum,
+                        Capital, YearSell, StaffNum, HomePage, PostCode, Introduct, WelFare
                 from (
                        SELECT ROW_NUMBER() over (order by CompSeqNum) as seq,
                                CompSeqNum, CompName, StockMarket, Address, Tel,
-                               Business, Capital, YearSell, StaffNum, HomePage,
-                               PostCode, Introduct
+                               Business, CompResNum, Capital, YearSell, StaffNum, HomePage,
+                               PostCode, Introduct, WelFare
                        from dbo.Company) a
                        where seq
                        between #{start} and #{end}

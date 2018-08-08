@@ -7,10 +7,12 @@
     <typeAliases>
         <typeAlias alias="UsersVo" type="com.bitacademy.vo.UsersVo"/>
         <typeAlias alias="CompanyVo" type="com.bitacademy.vo.CompanyVo"/>
+        <typeAlias alias="JobOfferVo" type="com.bitacademy.vo.JobOfferVo"/>
     </typeAliases>
     <mappers>
         <!--<mapper resource="mybatis/mssql-mappers/mssql-test.xml"/>-->
         <mapper resource="mybatis/mssql-mappers/user.xml"/>
         <mapper resource="mybatis/mssql-mappers/company.xml"/>
+        <mapper resource="mybatis/mssql-mappers/joboffer.xml"/>
     </mappers>
 </configuration>

@@ -30,6 +30,8 @@ public class UserService {
                     pushCount += userDao.pushUserInfo(usersVo);
                     System.out.println(pushCount + "개의 데이터가 입력 되었습니다.");
                 }
+            } else {
+                break;
             }
         }
         System.out.println("데이터 입력 완료");
