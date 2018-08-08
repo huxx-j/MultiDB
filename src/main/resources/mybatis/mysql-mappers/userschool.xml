@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="my-userSchool">
+
+    <insert id="pushUserSchool" parameterType="UserSchoolVo">
+        <![CDATA[
+        insert into UserScholarship(User_no, StartDate, EndDate, School, State, Location, Degree, Major, SubMajor)
+                            values (#{user_no}, #{startDate}, #{endDate}, #{school}, #{state}, #{location}, #{degree}, #{major}, #{subMajor})
+        ]]>
+
+    </insert>
+
+    <select id="getVerification" parameterType="Int" resultType="Int">
+        <![CDATA[
+                SELECT count(User_no) from Users where User_no=#{user_no}
+        ]]>
+    </select>
+
+</mapper>

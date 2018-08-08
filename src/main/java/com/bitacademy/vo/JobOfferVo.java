@@ -22,7 +22,7 @@ public class JobOfferVo {
     private String fax;
     private String cellphone;
     private String email;
-    private String name;
+    private String mgrName;
     private String department;
     private String position;
     private String etc;
@@ -36,7 +36,7 @@ public class JobOfferVo {
     public JobOfferVo() {
     }
 
-    public JobOfferVo(int commpany_no, String hireCnt, String useLang, String useOS, String useDB, String interviewDate, String career, String requirement, String yearIncome, String major, String advantage, String contractType, String field, String welfare, String procedure, String reqDocument, String reqDetail, String telephone, String fax, String handPhone, String email, String name, String department, String position, String etc, String post, String black, String receiptDate, String person, String recruitment, String employment) {
+    public JobOfferVo(int commpany_no, String hireCnt, String useLang, String useOS, String useDB, String interviewDate, String career, String requirement, String yearIncome, String major, String advantage, String contractType, String field, String welfare, String procedure, String reqDocument, String reqDetail, String telephone, String fax, String handPhone, String email, String mgrName, String department, String position, String etc, String post, String black, String receiptDate, String person, String recruitment, String employment) {
         this.company_no = commpany_no;
         this.hireCnt = hireCnt;
         this.useLang = useLang;
@@ -58,7 +58,7 @@ public class JobOfferVo {
         this.fax = fax;
         this.cellphone = handPhone;
         this.email = email;
-        this.name = name;
+        this.mgrName = mgrName;
         this.department = department;
         this.position = position;
         this.etc = etc;
@@ -238,12 +238,12 @@ public class JobOfferVo {
         this.email = email;
     }
 
-    public String getName() {
-        return name;
+    public String getMgrName() {
+        return mgrName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setMgrName(String mgrName) {
+        this.mgrName = mgrName;
     }
 
     public String getDepartment() {
@@ -342,7 +342,7 @@ public class JobOfferVo {
                 ", fax='" + fax + '\'' +
                 ", cellphone='" + cellphone + '\'' +
                 ", email='" + email + '\'' +
-                ", name='" + name + '\'' +
+                ", mgrName='" + mgrName + '\'' +
                 ", department='" + department + '\'' +
                 ", position='" + position + '\'' +
                 ", etc='" + etc + '\'' +

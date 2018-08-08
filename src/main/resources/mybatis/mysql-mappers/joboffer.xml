@@ -9,10 +9,10 @@
                   insert into sungwoo_test.JobRequest(Company_no, HireCnt, UseLang, UseOS, UseDB,
                   Career, Requirement, YearIncome, Major, Advantage, ContractType,
                   Field, Procedures, ReqDocument, ReqDetail, Telephone, Fax, Cellphone, Email,
-                  Name, Department, Position, Etc, Post, ReceiptDate) values (#{company_no}, #{hireCnt}, #{useLang}, #{useOS}, #{useDB},
+                  MgrName, Department, Position, Etc, Post, ReceiptDate) values (#{company_no}, #{hireCnt}, #{useLang}, #{useOS}, #{useDB},
                   #{career}, #{requirement}, #{yearIncome}, #{major}, #{advantage}, #{contractType},
                   #{field}, #{procedure}, #{reqDocument}, #{reqDetail}, #{telephone}, #{fax}, #{cellphone}, #{email},
-                  #{name}, #{department}, #{position}, #{etc}, #{post}, #{receiptDate})
+                  #{mgrName}, #{department}, #{position}, #{etc}, #{post}, #{receiptDate})
         ]]>
 
 

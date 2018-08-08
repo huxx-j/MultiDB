@@ -1,6 +1,7 @@
 package com.bitacademy.service;
 
 import com.bitacademy.dao.UserDao;
+import com.bitacademy.vo.UserSchoolVo;
 import com.bitacademy.vo.UsersVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,7 +18,7 @@ public class UserService {
     //유저 기본정보를 마이그레이션하는 코드
     public void getUserInfo(){
         int pushCount=0;
-        for (int i=30511; i<54000; i+=1000) {
+        for (int i=1; i<54000; i+=1000) {
             Map<String, Integer> map = new HashMap<>();
             map.put("start", i);
             map.put("end", i+999);
@@ -35,5 +36,36 @@ public class UserService {
             }
         }
         System.out.println("데이터 입력 완료");
+    }
+
+    public void getpushuserSchool() {
+        int pushCount=0;
+        int empty=0;
+        int index = 0;
+        for (int i=1; i<64000; i+=1000) {
+            Map<String, Integer> map = new HashMap<>();
+            map.put("start", i);
+            map.put("end", i+999);
+            List<UserSchoolVo> list = userDao.getUserschool(map);
+            if (list.size()!=0) {
+                for (UserSchoolVo userSchoolVo : list) {
+                    index++;
+                    System.out.print("데이터 index > " + index + "  //  ");
+                    int flag = userDao.getVerification(userSchoolVo.getUser_no());
+                    if (flag!=0) {
+                        System.out.print("User_no > " + userSchoolVo.getUser_no() + "  //  ");
+                        pushCount += userDao.pushUserSchool(userSchoolVo);
+                        System.out.println(pushCount + "개의 데이터가 입력 되었습니다.");
+                    } else { //참조할 값이 없으면 저장하지 않음
+                        System.out.println("User_no 없음");
+                        empty++;
+                    }
+                }
+            } else {
+                break;
+            }
+        }
+        System.out.println(pushCount + "개 데이터 입력 완료" + empty + "개 User_no 없음");
+
     }
 }

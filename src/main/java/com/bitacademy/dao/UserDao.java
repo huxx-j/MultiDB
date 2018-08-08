@@ -1,5 +1,6 @@
 package com.bitacademy.dao;
 
+import com.bitacademy.vo.UserSchoolVo;
 import com.bitacademy.vo.UsersVo;
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +27,20 @@ public class UserDao {
     public int pushUserInfo(UsersVo usersVo) {
         return mysqlSession.insert("my-user.pushUserInfo", usersVo);
     }
+
+    public List<UserSchoolVo> getUserschool(Map<String,Integer> map) {
+        return mssqlSession.selectList("ms-userSchool.getUserSchool", map);
+    }
+
+    public int pushUserSchool(UserSchoolVo userSchoolVo) {
+        return mysqlSession.insert("my-userSchool.pushUserSchool", userSchoolVo);
+    }
+
+    public int getVerification(int user_no) {
+        return mysqlSession.selectOne("my-userSchool.getVerification" ,user_no);
+    }
+
+
     //
 
 

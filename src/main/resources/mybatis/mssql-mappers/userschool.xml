@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ms-userSchool">
+    <resultMap id="rm" type="UserSchoolVo">
+        <result column="StudID" property="user_no" />
+        <result column="PeriodFr" property="startDate" />
+        <result column="PeriodTo" property="endDate" />
+        <result column="School" property="school" />
+        <result column="Stat" property="state" />
+        <result column="Location" property="location" />
+        <result column="Degree" property="degree" />
+        <result column="Major" property="major" />
+        <result column="SubMajor" property="subMajor" />
+    </resultMap>
+
+    <select id="getUserSchool" parameterType="HashMap" resultMap="rm">
+        <![CDATA[
+                 select StudID, PeriodFr, PeriodTo, School, Stat, Location, Degree, Major, SubMajor
+                 from(
+                       select ROW_NUMBER() over (order by StudID) as seq, StudID, PeriodFr,
+                               PeriodTo, School, Stat, Location, Degree, Major, SubMajor
+                       from dbo.MemberScholarshipBTC) a
+                       where seq
+                       between #{start} and #{end};
+        ]]>
+    </select>
+
+</mapper>

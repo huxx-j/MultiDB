@@ -15,4 +15,9 @@ public class UserController {
     public void getPushUserInfo() {
         userService.getUserInfo();
     }
+
+    @RequestMapping(value = "/getpushuserSchool")
+    public void getpushuserSchool(){
+        userService.getpushuserSchool();
+    }
 }

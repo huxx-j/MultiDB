@@ -17,7 +17,7 @@ public class JobOfferService {
     public void getPushJobOffer() {
 
         int pushCount = 0;
-        for (int i = 9069; i < 20000; i += 1000) {
+        for (int i = 1; i < 20000; i += 1000) { //i = 5220, 5416   // company_no 0 수동추가
             Map<String, Integer> map = new HashMap<>();
             map.put("start",i);
             map.put("end",i+999);
