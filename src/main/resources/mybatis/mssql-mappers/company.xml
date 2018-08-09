@@ -33,7 +33,5 @@
                        where seq
                        between #{start} and #{end}
         ]]>
-
-
     </select>
 </mapper>

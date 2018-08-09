@@ -2,11 +2,11 @@
 
 <html>
 <body>
-<h2>Hello World!</h2>
 <a href="/getpushuserinfo">유저정보이동</a><br/>
 <a href="/getpushcompanyinfo">회사정보이동</a><br/>
 <a href="/getpushjoboffer">구인의뢰정보이동</a><br/>
 <a href="/getpushjoboffer">구인의뢰정보이동</a><br/>
 <a href="/getpushuserSchool">회원학력정보이동</a><br/>
+<a href="/getPushLicense">자격정보이동</a><br/>
 </body>
 </html>

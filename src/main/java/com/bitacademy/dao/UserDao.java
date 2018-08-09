@@ -1,5 +1,6 @@
 package com.bitacademy.dao;
 
+import com.bitacademy.vo.LicenseVo;
 import com.bitacademy.vo.UserSchoolVo;
 import com.bitacademy.vo.UsersVo;
 import org.apache.ibatis.session.SqlSession;
@@ -37,7 +38,19 @@ public class UserDao {
     }
 
     public int getVerification(int user_no) {
-        return mysqlSession.selectOne("my-userSchool.getVerification" ,user_no);
+        return mysqlSession.selectOne("my-userSchool.getVerification", user_no);
+    }
+
+    public void getapplication() {
+//        return mssqlSession.selectList("");
+    }
+
+    public List<LicenseVo> getLicense(Map<String, Integer> map) {
+        return mssqlSession.selectList("ms-license.getLicense", map);
+    }
+
+    public int pushLicense(LicenseVo licenseVo) {
+        return mysqlSession.insert("my-license.pushLicense", licenseVo);
     }
 
 

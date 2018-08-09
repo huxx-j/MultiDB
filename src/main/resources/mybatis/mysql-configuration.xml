@@ -9,12 +9,14 @@
         <typeAlias alias="CompanyVo" type="com.bitacademy.vo.CompanyVo"/>
         <typeAlias alias="JobOfferVo" type="com.bitacademy.vo.JobOfferVo"/>
         <typeAlias alias="UserSchoolVo" type="com.bitacademy.vo.UserSchoolVo"/>
+        <typeAlias alias="LicenseVo" type="com.bitacademy.vo.LicenseVo"/>
     </typeAliases>
     <mappers>
         <!--<mapper resource="mybatis/mysql-mappers/mysql-test.xml"/>-->
         <mapper resource="mybatis/mysql-mappers/user.xml"/>
         <mapper resource="mybatis/mysql-mappers/company.xml"/>
         <mapper resource="mybatis/mysql-mappers/joboffer.xml"/>
+        <mapper resource="mybatis/mysql-mappers/license.xml"/>
         <mapper resource="mybatis/mysql-mappers/userschool.xml"/>
     </mappers>
 </configuration>

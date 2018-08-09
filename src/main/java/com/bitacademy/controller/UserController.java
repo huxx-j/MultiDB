@@ -20,4 +20,15 @@ public class UserController {
     public void getpushuserSchool(){
         userService.getpushuserSchool();
     }
+
+    //state(비트생) 정보 찾을때까지 보류
+    @RequestMapping(value = "/getpushapplication")
+    public void getpushapplication(){
+        userService.getpushapplication();
+    }
+
+    @RequestMapping(value = "/getPushLicense")
+    public void getpushlicense(){
+        userService.getPushLicense();
+    }
 }
