@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ms-training">
+    <resultMap id="rm" type="TrainingVo">
+        <result column="seq" property="seq"/>
+        <result column="StudID" property="user_no"/>
+        <result column="PeriodFr" property="startDate"/>
+        <result column="PeriodTo" property="endDate"/>
+        <result column="Academy" property="eduCenterName"/>
+        <result column="Course" property="eduCourseName"/>
+        <result column="Contents" property="content"/>
+    </resultMap>
+
+    <select id="getTraining" parameterType="HashMap" resultMap="rm">
+        <![CDATA[
+                SELECT seq, StudID, PeriodFr, PeriodTo, Academy, Course, Contents
+                from (
+                       SELECT ROW_NUMBER() over (order by StudID) as seq,
+                               StudID, PeriodFr, PeriodTo, Academy, Course, Contents
+                       from dbo.MemberEducation) a
+                       where seq
+                       between #{start} and #{end}
+        ]]>
+    </select>
+</mapper>

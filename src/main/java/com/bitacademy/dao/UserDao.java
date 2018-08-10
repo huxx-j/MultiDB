@@ -1,8 +1,6 @@
 package com.bitacademy.dao;
 
-import com.bitacademy.vo.LicenseVo;
-import com.bitacademy.vo.UserSchoolVo;
-import com.bitacademy.vo.UsersVo;
+import com.bitacademy.vo.*;
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -41,8 +39,12 @@ public class UserDao {
         return mysqlSession.selectOne("my-userSchool.getVerification", user_no);
     }
 
-    public void getapplication() {
-//        return mssqlSession.selectList("");
+    public List<ApplyInfoVo> getapplication(Map<String, Integer> map) {
+        return mssqlSession.selectList("ms-apply.getapplication", map);
+    }
+
+    public int pushapplication(ApplyInfoVo applyInfoVo) {
+        return mysqlSession.insert("my-apply.pushapplication", applyInfoVo);
     }
 
     public List<LicenseVo> getLicense(Map<String, Integer> map) {
@@ -51,6 +53,22 @@ public class UserDao {
 
     public int pushLicense(LicenseVo licenseVo) {
         return mysqlSession.insert("my-license.pushLicense", licenseVo);
+    }
+
+    public List<CareerVo> getCareer(Map<String,Integer> map) {
+        return mssqlSession.selectList("ms-career.getCareer",map);
+    }
+
+    public int pushCareer(CareerVo careerVo) {
+        return mysqlSession.insert("my-career.pushCareer", careerVo);
+    }
+
+    public List<TrainingVo> getTraining(Map<String,Integer> map) {
+        return mssqlSession.selectList("ms-training.getTraining", map);
+    }
+
+    public int pushTraining(TrainingVo trainingVo) {
+        return mysqlSession.insert("my-training.pushTraining", trainingVo);
     }
 
 

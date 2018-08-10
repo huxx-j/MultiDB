@@ -6,7 +6,7 @@
 
     <select id="pushLicense" parameterType="LicenseVo">
         <![CDATA[
-                 insert into sungwoo_test.Licence (
+                 insert into bitacademy_test.Licence (
                                User_no, LiceName, AcquireDate, IssueOrgan, Score)
                          values (#{user_no}, #{liceName}, #{acquireDate}, #{issueOrgan}, #{score})
         ]]>

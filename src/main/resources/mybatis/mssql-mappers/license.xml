@@ -4,6 +4,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="ms-license">
     <resultMap id="rm" type="LicenseVo">
+        <result column="seq" property="seq"/>
         <result column="StudID" property="user_no"/>
         <result column="LiceName" property="liceName"/>
         <result column="AcquireDate" property="acquireDate"/>
@@ -13,7 +14,7 @@
 
     <select id="getLicense" parameterType="HashMap" resultMap="rm">
         <![CDATA[
-                SELECT StudID, LiceName, AcquireDate, IssueOrgan, Score
+                SELECT seq, StudID, LiceName, AcquireDate, IssueOrgan, Score
                 from (
                        SELECT ROW_NUMBER() over (order by StudID) as seq,
                                StudID, LiceName, AcquireDate, IssueOrgan, Score

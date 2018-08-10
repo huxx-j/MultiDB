@@ -1,6 +1,7 @@
 package com.bitacademy.vo;
 
 public class LicenseVo {
+    private int seq;
     private int user_no;
     private String liceName;
     private String acquireDate;
@@ -16,6 +17,14 @@ public class LicenseVo {
         this.acquireDate = acquireDate;
         this.issueOrgan = issueOrgan;
         this.score = score;
+    }
+
+    public int getSeq() {
+        return seq;
+    }
+
+    public void setSeq(int seq) {
+        this.seq = seq;
     }
 
     public int getUser_no() {

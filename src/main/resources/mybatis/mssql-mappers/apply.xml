@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ms-apply">
+    <resultMap id="rm" type="ApplyInfoVo">
+        <result column="seq" property="seq"/>
+        <result column="StudID" property="user_no"/>
+        <result column="CourseID" property="curriculum_no"/>
+        <result column="ApplicationDate" property="applyDate"/>
+        <result column="AppliType" property="applyType"/>
+        <result column="SelectDateTime" property="testDate"/>
+        <result column="SelectSubject" property="testLang"/>
+        <result column="SelectScore" property="testScore"/>
+        <result column="SelectResult" property="testResult"/>
+        <result column="intervOpinion" property="coment"/>
+        <result column="ReceiptStat" property="deposit"/>
+        <result column="ReceiptAmount" property="depositAmount"/>
+        <result column="CardReceiptDate" property="cardPayDate"/>
+        <result column="CardReceiptAmount" property="cardPayAmount"/>
+        <result column="CardReceiptStat" property="cardPayState"/>
+        <result column="ReceiptDate" property="depositDate"/>
+        <result column="CompletStat" property="state"/>
+        <result column="ReceiptNote" property="note"/>
+        <result column="HopeText" property="afterPlan"/>
+        <result column="AppliMotive" property="motive"/>
+    </resultMap>
+    <select id="getCompanyInfo" parameterType="HashMap" resultMap="rm">
+        <![CDATA[
+                SELECT seq, StudID,CourseID,ApplicationDate,AppliType,SelectDateTime, SelectSubject, SelectScore,
+                        SelectResult, intervOpinion, ReceiptStat, ReceiptAmount, CardReceiptDate, CardReceiptAmount
+                        CardReceiptStat, ReceiptDate, ReceiptNote, HopeText, AppliMotive
+                from (
+                       SELECT ROW_NUMBER() over (order by StudID) as seq,
+                               StudID,CourseID,ApplicationDate,AppliType,SelectDateTime, SelectSubject, SelectScore,
+                               SelectResult, intervOpinion, ReceiptStat, ReceiptAmount, CardReceiptDate, CardReceiptAmount
+                               CardReceiptStat, ReceiptDate, ReceiptNote, HopeText, AppliMotive
+                       from dbo.Application) a
+                       where seq
+                       between #{start} and #{end}
+        ]]>
+    </select>
+</mapper>

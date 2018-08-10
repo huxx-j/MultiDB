@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ms-career">
+    <resultMap id="rm" type="CareerVo">
+        <result column="seq" property="seq"/>
+        <result column="StudID" property="user_no"/>
+        <result column="PeriodFr" property="startDate"/>
+        <result column="PeriodTo" property="endDate"/>
+        <result column="CompName" property="compName"/>
+        <result column="Operation" property="devPart"/>
+        <result column="Grade" property="role"/>
+        <result column="JobTel" property="telePhone"/>
+        <result column="Address" property="companyAdress"/>
+        <result column="ServiceStat" property="state"/>
+        <result column="Department" property="department"/>
+    </resultMap>
+
+    <select id="getCareer" parameterType="HashMap" resultMap="rm">
+        <![CDATA[
+                SELECT seq, StudID, PeriodFr, PeriodTo, CompName, Operation, Grade, JobTel, Address, ServiceStat, Department
+                from (
+                       SELECT ROW_NUMBER() over (order by StudID) as seq,
+                               StudID, PeriodFr, PeriodTo, CompName, Operation, Grade, JobTel, Address, ServiceStat, Department
+                       from dbo.MemberCareerBTC) a
+                       where seq
+                       between #{start} and #{end}
+        ]]>
+    </select>
+</mapper>

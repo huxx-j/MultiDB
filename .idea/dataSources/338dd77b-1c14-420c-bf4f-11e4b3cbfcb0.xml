@@ -8,6 +8,7 @@
       <DefaultCasing>exact</DefaultCasing>
     </root>
     <schema id="2" parent="1" name="bitacademy_test">
+      <Visible>1</Visible>
       <Collation>utf8_general_ci</Collation>
     </schema>
     <schema id="3" parent="1" name="information_schema">
@@ -549,166 +550,163 @@
       <Charset>utf8</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="139" parent="5" name="AfterService">
-      <Comment>취업사후관리</Comment>
-    </table>
-    <table id="140" parent="5" name="ApplyInfo">
+    <table id="139" parent="2" name="ApplyInfo">
       <Comment>지원 내역</Comment>
     </table>
-    <table id="141" parent="5" name="Code"/>
-    <table id="142" parent="5" name="CodeNumber"/>
-    <table id="143" parent="5" name="Company">
+    <table id="140" parent="2" name="Code"/>
+    <table id="141" parent="2" name="Company">
       <Comment>회사</Comment>
     </table>
-    <table id="144" parent="5" name="Curriculum">
+    <table id="142" parent="2" name="Curriculum">
       <Comment>커리큘럼</Comment>
     </table>
-    <table id="145" parent="5" name="CurriculumCate">
+    <table id="143" parent="2" name="CurriculumCate">
       <Comment>커리큘럼 카테고리</Comment>
     </table>
-    <table id="146" parent="5" name="Evaluation">
+    <table id="144" parent="2" name="Evaluation">
       <Comment>강의평가</Comment>
     </table>
-    <table id="147" parent="5" name="File">
+    <table id="145" parent="2" name="File">
       <Comment>파일테이블</Comment>
     </table>
-    <table id="148" parent="5" name="Gisu">
-      <Comment>기수 테이블</Comment>
-    </table>
-    <table id="149" parent="5" name="Interview">
+    <table id="146" parent="2" name="Interview">
       <Comment>면접지원관리</Comment>
     </table>
-    <table id="150" parent="5" name="JobRequest">
+    <table id="147" parent="2" name="JobRequest">
       <Comment>취업의뢰</Comment>
     </table>
-    <table id="151" parent="5" name="LectureReport">
+    <table id="148" parent="2" name="LectureReport">
       <Comment>수업일지</Comment>
     </table>
-    <table id="152" parent="5" name="Licence">
+    <table id="149" parent="2" name="Licence">
       <Comment>자격증/수상내역</Comment>
     </table>
-    <table id="153" parent="5" name="Package">
+    <table id="150" parent="2" name="Package">
       <Comment>패키지</Comment>
     </table>
-    <table id="154" parent="5" name="PackageCate">
+    <table id="151" parent="2" name="PackageCate">
       <Comment>패키지 카테고리</Comment>
     </table>
-    <table id="155" parent="5" name="Project">
+    <table id="152" parent="2" name="Project">
       <Comment>비트프로젝트</Comment>
     </table>
-    <table id="156" parent="5" name="ProjectMember">
+    <table id="153" parent="2" name="ProjectMember">
       <Comment>조원</Comment>
     </table>
-    <table id="157" parent="5" name="Score">
+    <table id="154" parent="2" name="Score">
       <Comment>이론평가</Comment>
     </table>
-    <table id="158" parent="5" name="StepInPack">
+    <table id="155" parent="2" name="StepInPack">
       <Comment>단계</Comment>
     </table>
-    <table id="159" parent="5" name="SubInStep">
+    <table id="156" parent="2" name="SubInStep">
       <Comment>단계 내 과목</Comment>
     </table>
-    <table id="160" parent="5" name="Subject">
+    <table id="157" parent="2" name="Subject">
       <Comment>과목</Comment>
     </table>
-    <table id="161" parent="5" name="SubjectCate">
+    <table id="158" parent="2" name="SubjectCate">
       <Comment>과목 카테고리</Comment>
     </table>
-    <table id="162" parent="5" name="Survey">
+    <table id="159" parent="2" name="Survey">
       <Comment>질문지</Comment>
     </table>
-    <table id="163" parent="5" name="UserCareer">
+    <table id="160" parent="2" name="UserCareer">
       <Comment>경력/프로젝트 경험</Comment>
     </table>
-    <table id="164" parent="5" name="UserScholarship">
+    <table id="161" parent="2" name="UserScholarship">
       <Comment>학력</Comment>
     </table>
-    <table id="165" parent="5" name="UserTraining">
+    <table id="162" parent="2" name="UserTraining">
       <Comment>관련교육</Comment>
     </table>
-    <table id="166" parent="5" name="Users">
+    <table id="163" parent="2" name="Users">
       <Comment>유저테이블</Comment>
     </table>
-    <table id="167" parent="5" name="cp_Volunteer"/>
-    <column id="168" parent="139" name="AfterService_no">
-      <Position>1</Position>
-      <Comment>새 컬럼</Comment>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <SequenceIdentity>1</SequenceIdentity>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="169" parent="139" name="User_no">
-      <Position>2</Position>
-      <Comment>유저번호</Comment>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="170" parent="139" name="CompName">
-      <Position>3</Position>
+    <table id="164" parent="2" name="jqgrid_test"/>
+    <view id="165" parent="2" name="v_subject"/>
+    <table id="166" parent="5" name="AfterService">
+      <Comment>취업사후관리</Comment>
+    </table>
+    <table id="167" parent="5" name="ApplyInfo">
+      <Comment>지원 내역</Comment>
+    </table>
+    <table id="168" parent="5" name="Code"/>
+    <table id="169" parent="5" name="CodeNumber"/>
+    <table id="170" parent="5" name="Company">
       <Comment>회사</Comment>
-      <DataType>varchar(200)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="171" parent="139" name="Department">
-      <Position>4</Position>
-      <Comment>부서</Comment>
-      <DataType>varchar(50)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="172" parent="139" name="State">
-      <Position>5</Position>
-      <Comment>재직여부</Comment>
-      <DataType>varchar(20)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="173" parent="139" name="Position">
-      <Position>6</Position>
-      <Comment>직책</Comment>
-      <DataType>varchar(20)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="174" parent="139" name="PeriodFr">
-      <Position>7</Position>
-      <Comment>입사일</Comment>
-      <DataType>varchar(10)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="175" parent="139" name="PeriodTo">
-      <Position>8</Position>
-      <Comment>퇴사일</Comment>
-      <DataType>varchar(10)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="176" parent="139" name="TelePhone">
-      <Position>9</Position>
-      <Comment>회사전화</Comment>
-      <DataType>varchar(20)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="177" parent="139" name="CompanyAddress">
-      <Position>10</Position>
-      <Comment>회사정보</Comment>
-      <DataType>varchar(500)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <index id="178" parent="139" name="FK_Users_TO_AfterService">
-      <ColNames>User_no</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="179" parent="139" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>AfterService_no</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="180" parent="139" name="FK_Users_TO_AfterService">
-      <ColNames>User_no</ColNames>
-      <RefSchemaName>sungwoo_test</RefSchemaName>
-      <RefTableName>Users</RefTableName>
-      <RefColNames>User_no</RefColNames>
-    </foreign-key>
-    <column id="181" parent="140" name="Applicant_no">
+    </table>
+    <table id="171" parent="5" name="Curriculum">
+      <Comment>커리큘럼</Comment>
+    </table>
+    <table id="172" parent="5" name="CurriculumCate">
+      <Comment>커리큘럼 카테고리</Comment>
+    </table>
+    <table id="173" parent="5" name="Evaluation">
+      <Comment>강의평가</Comment>
+    </table>
+    <table id="174" parent="5" name="File">
+      <Comment>파일테이블</Comment>
+    </table>
+    <table id="175" parent="5" name="Gisu">
+      <Comment>기수 테이블</Comment>
+    </table>
+    <table id="176" parent="5" name="Interview">
+      <Comment>면접지원관리</Comment>
+    </table>
+    <table id="177" parent="5" name="JobRequest">
+      <Comment>취업의뢰</Comment>
+    </table>
+    <table id="178" parent="5" name="LectureReport">
+      <Comment>수업일지</Comment>
+    </table>
+    <table id="179" parent="5" name="Licence">
+      <Comment>자격증/수상내역</Comment>
+    </table>
+    <table id="180" parent="5" name="Package">
+      <Comment>패키지</Comment>
+    </table>
+    <table id="181" parent="5" name="PackageCate">
+      <Comment>패키지 카테고리</Comment>
+    </table>
+    <table id="182" parent="5" name="Project">
+      <Comment>비트프로젝트</Comment>
+    </table>
+    <table id="183" parent="5" name="ProjectMember">
+      <Comment>조원</Comment>
+    </table>
+    <table id="184" parent="5" name="Score">
+      <Comment>이론평가</Comment>
+    </table>
+    <table id="185" parent="5" name="StepInPack">
+      <Comment>단계</Comment>
+    </table>
+    <table id="186" parent="5" name="SubInStep">
+      <Comment>단계 내 과목</Comment>
+    </table>
+    <table id="187" parent="5" name="Subject">
+      <Comment>과목</Comment>
+    </table>
+    <table id="188" parent="5" name="SubjectCate">
+      <Comment>과목 카테고리</Comment>
+    </table>
+    <table id="189" parent="5" name="Survey">
+      <Comment>질문지</Comment>
+    </table>
+    <table id="190" parent="5" name="UserCareer">
+      <Comment>경력/프로젝트 경험</Comment>
+    </table>
+    <table id="191" parent="5" name="UserScholarship">
+      <Comment>학력</Comment>
+    </table>
+    <table id="192" parent="5" name="UserTraining">
+      <Comment>관련교육</Comment>
+    </table>
+    <table id="193" parent="5" name="Users">
+      <Comment>유저테이블</Comment>
+    </table>
+    <table id="194" parent="5" name="cp_Volunteer"/>
+    <column id="195" parent="139" name="Applicant_no">
       <Position>1</Position>
       <Comment>지원자 코드</Comment>
       <DataType>int(11)|0s</DataType>
@@ -716,148 +714,148 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="182" parent="140" name="User_no">
+    <column id="196" parent="139" name="User_no">
       <Position>2</Position>
       <Comment>유저번호</Comment>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="183" parent="140" name="Curriculum_no">
+    <column id="197" parent="139" name="Curriculum_no">
       <Position>3</Position>
       <Comment>커리큘럼코드</Comment>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="184" parent="140" name="ApplyDate">
+    <column id="198" parent="139" name="ApplyDate">
       <Position>4</Position>
       <Comment>지원일자</Comment>
       <DataType>date|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="185" parent="140" name="ApplyType">
+    <column id="199" parent="139" name="ApplyType">
       <Position>5</Position>
       <Comment>지원종류</Comment>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="186" parent="140" name="TestDate">
+    <column id="200" parent="139" name="TestDate">
       <Position>6</Position>
       <Comment>전형일시</Comment>
       <DataType>date|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="187" parent="140" name="TestLang">
+    <column id="201" parent="139" name="TestLang">
       <Position>7</Position>
       <Comment>전형과목</Comment>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="188" parent="140" name="TestScore">
+    <column id="202" parent="139" name="TestScore">
       <Position>8</Position>
       <Comment>전형점수</Comment>
       <DataType>int(5)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="189" parent="140" name="TestResult">
+    <column id="203" parent="139" name="TestResult">
       <Position>9</Position>
       <Comment>전형결과</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="190" parent="140" name="Coment">
+    <column id="204" parent="139" name="Coment">
       <Position>10</Position>
       <Comment>면접위원 의견</Comment>
       <DataType>varchar(500)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="191" parent="140" name="Deposit">
+    <column id="205" parent="139" name="Deposit">
       <Position>11</Position>
       <Comment>입금여부</Comment>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="192" parent="140" name="DepositAmount">
+    <column id="206" parent="139" name="DepositAmount">
       <Position>12</Position>
       <Comment>계좌입금액</Comment>
       <DataType>int(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="193" parent="140" name="CardPayDate">
+    <column id="207" parent="139" name="CardPayDate">
       <Position>13</Position>
       <Comment>카드결제일</Comment>
       <DataType>date|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="194" parent="140" name="CardPayAmount">
+    <column id="208" parent="139" name="CardPayAmount">
       <Position>14</Position>
       <Comment>카드결제액</Comment>
       <DataType>int(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="195" parent="140" name="CardPayState">
+    <column id="209" parent="139" name="CardPayState">
       <Position>15</Position>
       <Comment>카드결제상태</Comment>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="196" parent="140" name="DepositDate">
+    <column id="210" parent="139" name="DepositDate">
       <Position>16</Position>
       <Comment>계좌입금일</Comment>
       <DataType>date|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="197" parent="140" name="TotalPay">
+    <column id="211" parent="139" name="TotalPay">
       <Position>17</Position>
       <Comment>결제액 계</Comment>
       <DataType>int(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="198" parent="140" name="Note">
+    <column id="212" parent="139" name="Note">
       <Position>18</Position>
       <Comment>입금 비고</Comment>
       <DataType>varchar(500)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="199" parent="140" name="State">
+    <column id="213" parent="139" name="State">
       <Position>19</Position>
       <Comment>합격/불합격/비트생/수료/비수료</Comment>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="200" parent="140" name="Consult">
+    <column id="214" parent="139" name="GisuFlag">
       <Position>20</Position>
-      <Comment>상담내역</Comment>
-      <DataType>varchar(500)|0s</DataType>
+      <Comment>기수부여여부</Comment>
+      <DataType>int(5)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="201" parent="140" name="FK_Users_TO_ApplyInfo">
+    <index id="215" parent="139" name="FK_Users_TO_ApplyInfo">
       <ColNames>User_no</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="202" parent="140" name="FK_Curriculum_TO_ApplyInfo">
+    <index id="216" parent="139" name="FK_Curriculum_TO_ApplyInfo">
       <ColNames>Curriculum_no</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="203" parent="140" name="PRIMARY">
+    <key id="217" parent="139" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Applicant_no</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="204" parent="140" name="FK_Users_TO_ApplyInfo">
+    <foreign-key id="218" parent="139" name="FK_Users_TO_ApplyInfo">
       <ColNames>User_no</ColNames>
-      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefSchemaName>bitacademy_test</RefSchemaName>
       <RefTableName>Users</RefTableName>
       <RefColNames>User_no</RefColNames>
     </foreign-key>
-    <foreign-key id="205" parent="140" name="FK_Curriculum_TO_ApplyInfo">
+    <foreign-key id="219" parent="139" name="FK_Curriculum_TO_ApplyInfo">
       <ColNames>Curriculum_no</ColNames>
-      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefSchemaName>bitacademy_test</RefSchemaName>
       <RefTableName>Curriculum</RefTableName>
       <RefColNames>Curriculum_no</RefColNames>
     </foreign-key>
-    <column id="206" parent="141" name="Code_no">
+    <column id="220" parent="140" name="Code_no">
       <Position>1</Position>
       <Comment>코드인덱스</Comment>
       <DataType>int(11)|0s</DataType>
@@ -865,169 +863,156 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="207" parent="141" name="CodeNumber_no2">
+    <column id="221" parent="140" name="UseStatus">
       <Position>2</Position>
-      <Comment>코드번호 인덱스</Comment>
-      <DataType>int(11)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="208" parent="141" name="Result">
-      <Position>3</Position>
-      <Comment>결과값</Comment>
-      <DataType>varchar(50)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="209" parent="141" name="Del">
-      <Position>4</Position>
       <Comment>사용여부</Comment>
       <DataType>tinyint(1)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="210" parent="141" name="Value">
-      <Position>5</Position>
+    <column id="222" parent="140" name="Text">
+      <Position>3</Position>
       <Comment>벨류값</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="223" parent="140" name="Value">
+      <Position>4</Position>
+      <Comment>키</Comment>
+      <DataType>varchar(5)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="224" parent="140" name="Order">
+      <Position>5</Position>
+      <Comment>순서</Comment>
       <DataType>int(5)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="211" parent="141" name="CodeNumber_no">
-      <ColNames>CodeNumber_no2</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="212" parent="141" name="PRIMARY">
+    <column id="225" parent="140" name="Group">
+      <Position>6</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="226" parent="140" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Code_no</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="213" parent="141" name="CodeNumber_no">
-      <ColNames>CodeNumber_no2</ColNames>
-      <RefSchemaName>sungwoo_test</RefSchemaName>
-      <RefTableName>CodeNumber</RefTableName>
-      <RefColNames>CodeNumber_no</RefColNames>
-    </foreign-key>
-    <column id="214" parent="142" name="CodeNumber_no">
+    <column id="227" parent="141" name="Company_no">
       <Position>1</Position>
-      <Comment>코드번호 인덱스</Comment>
+      <Comment>company_no</Comment>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="215" parent="142" name="CodeName">
-      <Position>2</Position>
-      <Comment>구분명</Comment>
-      <DataType>varchar(50)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <key id="216" parent="142" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>CodeNumber_no</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="217" parent="143" name="Company_no">
-      <Position>1</Position>
-      <Comment>company_no</Comment>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="218" parent="143" name="CompName">
+    <column id="228" parent="141" name="CompName">
       <Position>2</Position>
       <Comment>회사명</Comment>
       <DataType>varchar(200)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="219" parent="143" name="CompResNum">
+    <column id="229" parent="141" name="StockMarket">
       <Position>3</Position>
-      <DataType>varchar(20)|0s</DataType>
+      <Comment>상장여부</Comment>
+      <DataType>tinyint(1)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="220" parent="143" name="Address">
+    <column id="230" parent="141" name="Address">
       <Position>4</Position>
       <Comment>주소</Comment>
       <DataType>varchar(400)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="221" parent="143" name="Tel">
+    <column id="231" parent="141" name="Tel">
       <Position>5</Position>
       <Comment>전화</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="222" parent="143" name="StockMarket">
+    <column id="232" parent="141" name="File_no">
       <Position>6</Position>
-      <Comment>상장여부</Comment>
-      <DataType>varchar(200)|0s</DataType>
+      <Comment>파일 번호</Comment>
+      <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="223" parent="143" name="Welfare">
+    <column id="233" parent="141" name="Business">
       <Position>7</Position>
+      <Comment>주력사업</Comment>
       <DataType>varchar(4000)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="224" parent="143" name="Capital">
+    <column id="234" parent="141" name="Capital">
       <Position>8</Position>
       <Comment>자본금</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="225" parent="143" name="YearSell">
+    <column id="235" parent="141" name="YearSell">
       <Position>9</Position>
       <Comment>연매출액</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="226" parent="143" name="StaffNum">
+    <column id="236" parent="141" name="StaffCnt">
       <Position>10</Position>
       <Comment>직원수</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="227" parent="143" name="HomePage">
+    <column id="237" parent="141" name="HomePage">
       <Position>11</Position>
       <Comment>홈페이지</Comment>
       <DataType>varchar(400)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="228" parent="143" name="PostCode">
+    <column id="238" parent="141" name="PostCode">
       <Position>12</Position>
       <Comment>우편번호</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="229" parent="143" name="Introduction">
+    <column id="239" parent="141" name="Introduction">
       <Position>13</Position>
       <Comment>회사소개</Comment>
       <DataType>text|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="230" parent="143" name="File_no">
+    <column id="240" parent="141" name="Welfare">
       <Position>14</Position>
-      <Comment>파일 번호</Comment>
-      <DataType>int(11)|0s</DataType>
+      <Comment>복지</Comment>
+      <DataType>varchar(2000)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="231" parent="143" name="Business">
+    <column id="241" parent="141" name="CompResNum">
       <Position>15</Position>
-      <Comment>주력사업</Comment>
-      <DataType>varchar(4000)|0s</DataType>
+      <Comment>사업자등록번호</Comment>
+      <DataType>varchar(15)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="232" parent="143" name="FK_File_TO_Company">
+    <column id="242" parent="141" name="OpenDate">
+      <Position>16</Position>
+      <Comment>설립년도</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="243" parent="141" name="FK_File_TO_Company">
       <ColNames>File_no</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="233" parent="143" name="PRIMARY">
+    <key id="244" parent="141" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Company_no</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="234" parent="143" name="FK_File_TO_Company">
+    <foreign-key id="245" parent="141" name="FK_File_TO_Company">
       <ColNames>File_no</ColNames>
-      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefSchemaName>bitacademy_test</RefSchemaName>
       <RefTableName>File</RefTableName>
       <RefColNames>File_no</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="235" parent="144" name="Curriculum_no">
+    <column id="246" parent="142" name="Curriculum_no">
       <Position>1</Position>
       <Comment>커리큘럼코드</Comment>
       <DataType>int(11)|0s</DataType>
@@ -1035,118 +1020,124 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="236" parent="144" name="Package_no">
+    <column id="247" parent="142" name="Package_no">
       <Position>2</Position>
       <Comment>패키지 코드</Comment>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="237" parent="144" name="CurriculumCate_no">
+    <column id="248" parent="142" name="CurriculumCate_no">
       <Position>3</Position>
       <Comment>커리큘럼 카테고리 코드</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="238" parent="144" name="CurriName">
+    <column id="249" parent="142" name="CurriName">
       <Position>4</Position>
       <Comment>커리큘럼 이름</Comment>
       <DataType>varchar(200)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="239" parent="144" name="StartDate">
+    <column id="250" parent="142" name="StartDate">
       <Position>5</Position>
       <Comment>시작일</Comment>
       <DataType>date|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="240" parent="144" name="EndDate">
+    <column id="251" parent="142" name="EndDate">
       <Position>6</Position>
       <Comment>종료일</Comment>
       <DataType>date|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="241" parent="144" name="Time">
+    <column id="252" parent="142" name="Time">
       <Position>7</Position>
       <Comment>강의시간</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="242" parent="144" name="MaxCnt">
+    <column id="253" parent="142" name="MaxCnt">
       <Position>8</Position>
       <Comment>정원</Comment>
       <DataType>int(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="243" parent="144" name="Price">
+    <column id="254" parent="142" name="Price">
       <Position>9</Position>
       <Comment>교육비</Comment>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="244" parent="144" name="Support">
+    <column id="255" parent="142" name="Support">
       <Position>10</Position>
       <Comment>교육지원</Comment>
       <DataType>varchar(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="245" parent="144" name="ManagerInfo">
+    <column id="256" parent="142" name="ManagerInfo">
       <Position>11</Position>
       <Comment>문의</Comment>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="246" parent="144" name="State">
+    <column id="257" parent="142" name="State">
       <Position>12</Position>
       <Comment>상태</Comment>
       <DataType>int(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="247" parent="144" name="MainViewFlag">
+    <column id="258" parent="142" name="MainViewFlag">
       <Position>13</Position>
       <Comment>메인 노출 여부</Comment>
       <DataType>tinyint(1)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="248" parent="144" name="DetailViewFlag">
+    <column id="259" parent="142" name="DetailViewFlag">
       <Position>14</Position>
       <Comment>상세 노출여부</Comment>
       <DataType>tinyint(1)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="249" parent="144" name="CurriNickname">
+    <column id="260" parent="142" name="CurriNickname">
       <Position>15</Position>
-      <Comment>커리큘럼별명&#xd;
+      <Comment>커리큘럼별명
 </Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="250" parent="144" name="FK_Package_TO_Curriculum">
+    <column id="261" parent="142" name="GisuName">
+      <Position>16</Position>
+      <Comment>기수이름</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="262" parent="142" name="FK_Package_TO_Curriculum">
       <ColNames>Package_no</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="251" parent="144" name="FK_CurriculumCate_TO_Curriculum">
+    <index id="263" parent="142" name="FK_CurriculumCate_TO_Curriculum">
       <ColNames>CurriculumCate_no</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="252" parent="144" name="PRIMARY">
+    <key id="264" parent="142" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Curriculum_no</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="253" parent="144" name="FK_Package_TO_Curriculum">
+    <foreign-key id="265" parent="142" name="FK_Package_TO_Curriculum">
       <ColNames>Package_no</ColNames>
-      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefSchemaName>bitacademy_test</RefSchemaName>
       <RefTableName>Package</RefTableName>
       <RefColNames>Package_no</RefColNames>
     </foreign-key>
-    <foreign-key id="254" parent="144" name="FK_CurriculumCate_TO_Curriculum">
+    <foreign-key id="266" parent="142" name="FK_CurriculumCate_TO_Curriculum">
       <ColNames>CurriculumCate_no</ColNames>
-      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefSchemaName>bitacademy_test</RefSchemaName>
       <RefTableName>CurriculumCate</RefTableName>
       <RefColNames>CurriculumCate_no</RefColNames>
     </foreign-key>
-    <column id="255" parent="145" name="CurriculumCate_no">
+    <column id="267" parent="143" name="CurriculumCate_no">
       <Position>1</Position>
       <Comment>커리큘럼 카테고리 코드</Comment>
       <DataType>int(11)|0s</DataType>
@@ -1154,42 +1145,30 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="256" parent="145" name="CateName">
+    <column id="268" parent="143" name="CateName">
       <Position>2</Position>
       <Comment>카테고리 이름</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="257" parent="145" name="GroupCode">
+    <column id="269" parent="143" name="ParentCode">
       <Position>3</Position>
-      <Comment>그룹코드(커리큘럼)</Comment>
-      <DataType>int(10)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="258" parent="145" name="ParentCode">
-      <Position>4</Position>
       <Comment>부모코드(커리큘럼)</Comment>
       <DataType>int(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="259" parent="145" name="Depth">
-      <Position>5</Position>
-      <Comment>깊이(패키지)</Comment>
-      <DataType>int(10)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="260" parent="145" name="Del">
-      <Position>6</Position>
+    <column id="270" parent="143" name="DelStatus">
+      <Position>4</Position>
       <Comment>삭제여부</Comment>
       <DataType>tinyint(1)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="261" parent="145" name="PRIMARY">
+    <key id="271" parent="143" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>CurriculumCate_no</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="262" parent="146" name="Evaluation_no">
+    <column id="272" parent="144" name="Evaluation_no">
       <Position>1</Position>
       <Comment>강의평가코드</Comment>
       <DataType>int(11)|0s</DataType>
@@ -1197,76 +1176,76 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="263" parent="146" name="Curriculum_no">
+    <column id="273" parent="144" name="Curriculum_no">
       <Position>2</Position>
       <Comment>커리큘럼코드</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="264" parent="146" name="User_no">
+    <column id="274" parent="144" name="User_no">
       <Position>3</Position>
       <Comment>유저번호</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="265" parent="146" name="Survey_no">
+    <column id="275" parent="144" name="Survey_no">
       <Position>4</Position>
       <Comment>질문지 코드</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="266" parent="146" name="SubInStep_no">
+    <column id="276" parent="144" name="SubInStep_no">
       <Position>5</Position>
       <Comment>단계 내 과목 코드</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="267" parent="146" name="FK_Curriculum_TO_Evaluation">
+    <index id="277" parent="144" name="FK_Curriculum_TO_Evaluation">
       <ColNames>Curriculum_no</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="268" parent="146" name="FK_Users_TO_Evaluation">
+    <index id="278" parent="144" name="FK_Users_TO_Evaluation">
       <ColNames>User_no</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="269" parent="146" name="FK_Survey_TO_Evaluation">
+    <index id="279" parent="144" name="FK_Survey_TO_Evaluation">
       <ColNames>Survey_no</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="270" parent="146" name="FK_SubInStep_TO_Evaluation">
+    <index id="280" parent="144" name="FK_SubInStep_TO_Evaluation">
       <ColNames>SubInStep_no</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="271" parent="146" name="PRIMARY">
+    <key id="281" parent="144" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Evaluation_no</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="272" parent="146" name="FK_Curriculum_TO_Evaluation">
+    <foreign-key id="282" parent="144" name="FK_Curriculum_TO_Evaluation">
       <ColNames>Curriculum_no</ColNames>
-      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefSchemaName>bitacademy_test</RefSchemaName>
       <RefTableName>Curriculum</RefTableName>
       <RefColNames>Curriculum_no</RefColNames>
     </foreign-key>
-    <foreign-key id="273" parent="146" name="FK_Users_TO_Evaluation">
+    <foreign-key id="283" parent="144" name="FK_Users_TO_Evaluation">
       <ColNames>User_no</ColNames>
-      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefSchemaName>bitacademy_test</RefSchemaName>
       <RefTableName>Users</RefTableName>
       <RefColNames>User_no</RefColNames>
     </foreign-key>
-    <foreign-key id="274" parent="146" name="FK_Survey_TO_Evaluation">
+    <foreign-key id="284" parent="144" name="FK_Survey_TO_Evaluation">
       <ColNames>Survey_no</ColNames>
-      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefSchemaName>bitacademy_test</RefSchemaName>
       <RefTableName>Survey</RefTableName>
       <RefColNames>Survey_no</RefColNames>
     </foreign-key>
-    <foreign-key id="275" parent="146" name="FK_SubInStep_TO_Evaluation">
+    <foreign-key id="285" parent="144" name="FK_SubInStep_TO_Evaluation">
       <ColNames>SubInStep_no</ColNames>
-      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefSchemaName>bitacademy_test</RefSchemaName>
       <RefTableName>SubInStep</RefTableName>
       <RefColNames>SubInStep_no</RefColNames>
     </foreign-key>
-    <column id="276" parent="147" name="File_no">
+    <column id="286" parent="145" name="File_no">
       <Position>1</Position>
       <Comment>파일 번호</Comment>
       <DataType>int(11)|0s</DataType>
@@ -1274,65 +1253,30 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="277" parent="147" name="FileSize">
+    <column id="287" parent="145" name="FileSize">
       <Position>2</Position>
       <Comment>파일 사이즈</Comment>
       <DataType>int(200)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="278" parent="147" name="FilePath">
+    <column id="288" parent="145" name="FilePath">
       <Position>3</Position>
       <Comment>파일 경로</Comment>
       <DataType>varchar(1000)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="279" parent="147" name="FileName">
+    <column id="289" parent="145" name="FileName">
       <Position>4</Position>
       <Comment>파일이름</Comment>
       <DataType>varchar(500)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="280" parent="147" name="PRIMARY">
+    <key id="290" parent="145" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>File_no</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="281" parent="148" name="Gisu_no">
-      <Position>1</Position>
-      <Comment>인덱스</Comment>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <SequenceIdentity>1</SequenceIdentity>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="282" parent="148" name="GisuName">
-      <Position>2</Position>
-      <Comment>기수이름</Comment>
-      <DataType>varchar(20)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="283" parent="148" name="Curriculum_no">
-      <Position>3</Position>
-      <Comment>커리큘럼코드</Comment>
-      <DataType>int(11)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <index id="284" parent="148" name="FK_Curriculum_TO_Gisu">
-      <ColNames>Curriculum_no</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="285" parent="148" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>Gisu_no</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="286" parent="148" name="FK_Curriculum_TO_Gisu">
-      <ColNames>Curriculum_no</ColNames>
-      <RefSchemaName>sungwoo_test</RefSchemaName>
-      <RefTableName>Curriculum</RefTableName>
-      <RefColNames>Curriculum_no</RefColNames>
-    </foreign-key>
-    <column id="287" parent="149" name="Interview_no">
+    <column id="291" parent="146" name="Interview_no">
       <Position>1</Position>
       <Comment>새 컬럼2</Comment>
       <DataType>int(11)|0s</DataType>
@@ -1340,69 +1284,75 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="288" parent="149" name="User_no">
+    <column id="292" parent="146" name="User_no">
       <Position>2</Position>
       <Comment>유저번호</Comment>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="289" parent="149" name="Company_no">
+    <column id="293" parent="146" name="Company_no">
       <Position>3</Position>
       <Comment>company_no</Comment>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="290" parent="149" name="Request_no">
+    <column id="294" parent="146" name="Request_no">
       <Position>4</Position>
       <Comment>공고no</Comment>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="291" parent="149" name="Result">
+    <column id="295" parent="146" name="Result">
       <Position>5</Position>
       <Comment>면접결과</Comment>
       <DataType>varchar(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="292" parent="149" name="FK_Users_TO_Interview">
+    <column id="296" parent="146" name="ApplyDate">
+      <Position>6</Position>
+      <Comment>지원일자</Comment>
+      <DataType>date|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="297" parent="146" name="FK_Users_TO_Interview">
       <ColNames>User_no</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="293" parent="149" name="FK_Company_TO_Interview">
+    <index id="298" parent="146" name="FK_Company_TO_Interview">
       <ColNames>Company_no</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="294" parent="149" name="FK_JobRequest_TO_Interview">
+    <index id="299" parent="146" name="FK_JobRequest_TO_Interview">
       <ColNames>Request_no</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="295" parent="149" name="PRIMARY">
+    <key id="300" parent="146" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Interview_no</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="296" parent="149" name="FK_Users_TO_Interview">
+    <foreign-key id="301" parent="146" name="FK_Users_TO_Interview">
       <ColNames>User_no</ColNames>
-      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefSchemaName>bitacademy_test</RefSchemaName>
       <RefTableName>Users</RefTableName>
       <RefColNames>User_no</RefColNames>
     </foreign-key>
-    <foreign-key id="297" parent="149" name="FK_Company_TO_Interview">
+    <foreign-key id="302" parent="146" name="FK_Company_TO_Interview">
       <ColNames>Company_no</ColNames>
       <RefSchemaName>bitacademy_test</RefSchemaName>
       <RefTableName>Company</RefTableName>
       <RefColNames>Company_no</RefColNames>
     </foreign-key>
-    <foreign-key id="298" parent="149" name="FK_JobRequest_TO_Interview">
+    <foreign-key id="303" parent="146" name="FK_JobRequest_TO_Interview">
       <ColNames>Request_no</ColNames>
-      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefSchemaName>bitacademy_test</RefSchemaName>
       <RefTableName>JobRequest</RefTableName>
       <RefColNames>Request_no</RefColNames>
     </foreign-key>
-    <column id="299" parent="150" name="Request_no">
+    <column id="304" parent="147" name="Request_no">
       <Position>1</Position>
       <Comment>공고no</Comment>
       <DataType>int(11)|0s</DataType>
@@ -1410,255 +1360,255 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="300" parent="150" name="Company_no">
+    <column id="305" parent="147" name="Company_no">
       <Position>2</Position>
       <Comment>company_no</Comment>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="301" parent="150" name="HireCnt">
+    <column id="306" parent="147" name="HireCnt">
       <Position>3</Position>
       <Comment>채용인원</Comment>
       <DataType>varchar(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="302" parent="150" name="UseLang">
+    <column id="307" parent="147" name="UseLang">
       <Position>4</Position>
       <Comment>사용언어</Comment>
-      <DataType>varchar(500)|0s</DataType>
+      <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="303" parent="150" name="UseOS">
+    <column id="308" parent="147" name="UseOS">
       <Position>5</Position>
       <Comment>사용OS</Comment>
-      <DataType>varchar(500)|0s</DataType>
+      <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="304" parent="150" name="UseDB">
+    <column id="309" parent="147" name="UseDB">
       <Position>6</Position>
       <Comment>사용DB</Comment>
-      <DataType>varchar(500)|0s</DataType>
+      <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="305" parent="150" name="InterviewDate">
+    <column id="310" parent="147" name="InterviewDate">
       <Position>7</Position>
       <Comment>면접일정</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="306" parent="150" name="Career">
+    <column id="311" parent="147" name="Career">
       <Position>8</Position>
       <Comment>경력여부</Comment>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="307" parent="150" name="Requirement">
+    <column id="312" parent="147" name="Requirement">
       <Position>9</Position>
       <Comment>자격요건(석사,대졸)</Comment>
-      <DataType>varchar(200)|0s</DataType>
+      <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="308" parent="150" name="YearIncome">
+    <column id="313" parent="147" name="YearIncome">
       <Position>10</Position>
       <Comment>연봉</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="314" parent="147" name="Major">
+      <Position>11</Position>
+      <Comment>학과</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="315" parent="147" name="Advantage">
+      <Position>12</Position>
+      <Comment>우대조건</Comment>
       <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="309" parent="150" name="Major">
-      <Position>11</Position>
-      <Comment>학과</Comment>
-      <DataType>varchar(500)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="310" parent="150" name="Advantage">
-      <Position>12</Position>
-      <Comment>우대조건</Comment>
-      <DataType>varchar(1000)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="311" parent="150" name="ContractType">
+    <column id="316" parent="147" name="ContractType">
       <Position>13</Position>
       <Comment>고용형태</Comment>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="312" parent="150" name="Field">
+    <column id="317" parent="147" name="Field">
       <Position>14</Position>
       <Comment>모집부문</Comment>
-      <DataType>varchar(500)|0s</DataType>
+      <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="313" parent="150" name="Procedures">
+    <column id="318" parent="147" name="Procedures">
       <Position>15</Position>
       <Comment>전형절차</Comment>
-      <DataType>varchar(500)|0s</DataType>
+      <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="314" parent="150" name="ReqDocument">
+    <column id="319" parent="147" name="ReqDocument">
       <Position>16</Position>
       <Comment>제출서류</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="320" parent="147" name="ReqDetail">
+      <Position>17</Position>
+      <Comment>요구사항</Comment>
       <DataType>varchar(500)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="315" parent="150" name="ReqDetail">
-      <Position>17</Position>
-      <Comment>요구사항</Comment>
-      <DataType>varchar(4000)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="316" parent="150" name="Telephone">
+    <column id="321" parent="147" name="Telephone">
       <Position>18</Position>
       <Comment>전화번호(담당자)</Comment>
-      <DataType>varchar(50)|0s</DataType>
+      <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="317" parent="150" name="Fax">
+    <column id="322" parent="147" name="Fax">
       <Position>19</Position>
       <Comment>팩스(담당자)</Comment>
-      <DataType>varchar(50)|0s</DataType>
+      <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="318" parent="150" name="Cellphone">
+    <column id="323" parent="147" name="Cellphone">
       <Position>20</Position>
       <Comment>휴대폰(담당자</Comment>
-      <DataType>varchar(50)|0s</DataType>
+      <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="319" parent="150" name="Email">
+    <column id="324" parent="147" name="Email">
       <Position>21</Position>
       <Comment>e-mail(담당자)</Comment>
       <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="320" parent="150" name="MgrName">
+    <column id="325" parent="147" name="MgrName">
       <Position>22</Position>
       <Comment>이름(담당자)</Comment>
-      <DataType>varchar(100)|0s</DataType>
+      <DataType>varchar(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="321" parent="150" name="Department">
+    <column id="326" parent="147" name="Department">
       <Position>23</Position>
       <Comment>부서(담당자</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="322" parent="150" name="Position">
+    <column id="327" parent="147" name="Position">
       <Position>24</Position>
       <Comment>직책(담당자)</Comment>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="323" parent="150" name="Etc">
+    <column id="328" parent="147" name="Etc">
       <Position>25</Position>
       <Comment>기타사항</Comment>
-      <DataType>varchar(1000)|0s</DataType>
+      <DataType>varchar(500)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="324" parent="150" name="Post">
+    <column id="329" parent="147" name="Post">
       <Position>26</Position>
       <Comment>게시유무</Comment>
       <DataType>tinyint(1)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="325" parent="150" name="Black">
+    <column id="330" parent="147" name="Black">
       <Position>27</Position>
       <Comment>블랙</Comment>
       <DataType>tinyint(1)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="326" parent="150" name="ReceiptDate">
+    <column id="331" parent="147" name="ReceiptDate">
       <Position>28</Position>
       <Comment>접수일</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="327" parent="150" name="Employment">
+    <column id="332" parent="147" name="Employment">
       <Position>29</Position>
       <Comment>상시채용</Comment>
       <DataType>tinyint(1)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="328" parent="150" name="JobRequest_Company_Company_no_fk">
+    <index id="333" parent="147" name="FK_Company_TO_JobRequest">
       <ColNames>Company_no</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="329" parent="150" name="PRIMARY">
+    <key id="334" parent="147" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Request_no</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="330" parent="150" name="JobRequest_Company_Company_no_fk">
+    <foreign-key id="335" parent="147" name="FK_Company_TO_JobRequest">
       <ColNames>Company_no</ColNames>
-      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefSchemaName>bitacademy_test</RefSchemaName>
       <RefTableName>Company</RefTableName>
       <RefColNames>Company_no</RefColNames>
     </foreign-key>
-    <column id="331" parent="151" name="LectureReport_no">
+    <column id="336" parent="148" name="LectureReport_no">
       <Position>1</Position>
       <Comment>index</Comment>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="332" parent="151" name="Curriculum_no">
+    <column id="337" parent="148" name="Curriculum_no">
       <Position>2</Position>
       <Comment>커리큘럼코드</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="333" parent="151" name="Subject">
+    <column id="338" parent="148" name="Subject">
       <Position>3</Position>
       <Comment>훈련과목</Comment>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="334" parent="151" name="Content">
+    <column id="339" parent="148" name="Content">
       <Position>4</Position>
       <Comment>훈련내용</Comment>
       <DataType>varchar(500)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="335" parent="151" name="Teacher">
+    <column id="340" parent="148" name="Teacher">
       <Position>5</Position>
       <Comment>담당교사</Comment>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="336" parent="151" name="Etc">
+    <column id="341" parent="148" name="Etc">
       <Position>6</Position>
       <Comment>비고</Comment>
       <DataType>varchar(500)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="337" parent="151" name="Period">
+    <column id="342" parent="148" name="Period">
       <Position>7</Position>
       <Comment>교시</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="338" parent="151" name="ClassDate">
+    <column id="343" parent="148" name="ClassDate">
       <Position>8</Position>
       <Comment>수업일자</Comment>
       <DataType>date|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="339" parent="151" name="FK_Curriculum_TO_LectureReport">
+    <index id="344" parent="148" name="FK_Curriculum_TO_LectureReport">
       <ColNames>Curriculum_no</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="340" parent="151" name="PRIMARY">
+    <key id="345" parent="148" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>LectureReport_no</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="341" parent="151" name="FK_Curriculum_TO_LectureReport">
+    <foreign-key id="346" parent="148" name="FK_Curriculum_TO_LectureReport">
       <ColNames>Curriculum_no</ColNames>
-      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefSchemaName>bitacademy_test</RefSchemaName>
       <RefTableName>Curriculum</RefTableName>
       <RefColNames>Curriculum_no</RefColNames>
     </foreign-key>
-    <column id="342" parent="152" name="License_no">
+    <column id="347" parent="149" name="License_no">
       <Position>1</Position>
       <Comment>새 컬럼</Comment>
       <DataType>int(11)|0s</DataType>
@@ -1666,52 +1616,53 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="343" parent="152" name="User_no">
+    <column id="348" parent="149" name="User_no">
       <Position>2</Position>
       <Comment>유저번호</Comment>
       <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="344" parent="152" name="LiceName">
+    <column id="349" parent="149" name="LiceName">
       <Position>3</Position>
       <Comment>자격/수상명</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="345" parent="152" name="AcquireDate">
+    <column id="350" parent="149" name="AcquireDate">
       <Position>4</Position>
       <Comment>취득일</Comment>
       <DataType>varchar(12)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="346" parent="152" name="IssueOrgan">
+    <column id="351" parent="149" name="IssueOrgan">
       <Position>5</Position>
       <Comment>발급기관</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="347" parent="152" name="Score">
+    <column id="352" parent="149" name="Score">
       <Position>6</Position>
       <Comment>비고(점수)</Comment>
       <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="348" parent="152" name="FK_Users_TO_Licence">
+    <index id="353" parent="149" name="FK_Users_TO_Licence">
       <ColNames>User_no</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="349" parent="152" name="PRIMARY">
+    <key id="354" parent="149" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>License_no</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="350" parent="152" name="FK_Users_TO_Licence">
+    <foreign-key id="355" parent="149" name="FK_Users_TO_Licence">
       <ColNames>User_no</ColNames>
-      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefSchemaName>bitacademy_test</RefSchemaName>
       <RefTableName>Users</RefTableName>
       <RefColNames>User_no</RefColNames>
     </foreign-key>
-    <column id="351" parent="153" name="Package_no">
+    <column id="356" parent="150" name="Package_no">
       <Position>1</Position>
       <Comment>패키지 코드</Comment>
       <DataType>int(11)|0s</DataType>
@@ -1719,70 +1670,70 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="352" parent="153" name="PackageCate_no">
+    <column id="357" parent="150" name="PackageCate_no">
       <Position>2</Position>
       <Comment>패키지 카테고리 코드</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="353" parent="153" name="UseStatus">
+    <column id="358" parent="150" name="UseStatus">
       <Position>3</Position>
       <Comment>사용여부</Comment>
       <DataType>tinyint(1)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="354" parent="153" name="PackageName">
+    <column id="359" parent="150" name="PackageName">
       <Position>4</Position>
       <Comment>패키지 이름</Comment>
       <DataType>varchar(200)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="355" parent="153" name="Goal">
+    <column id="360" parent="150" name="Goal">
       <Position>5</Position>
       <Comment>목적 및 목표</Comment>
       <DataType>varchar(2000)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="356" parent="153" name="Content">
+    <column id="361" parent="150" name="Content">
       <Position>6</Position>
       <Comment>훈련 내용</Comment>
       <DataType>varchar(2000)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="357" parent="153" name="Qualification">
+    <column id="362" parent="150" name="Qualification">
       <Position>7</Position>
       <Comment>대상 조건</Comment>
       <DataType>varchar(2000)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="358" parent="153" name="TotalTime">
+    <column id="363" parent="150" name="TotalTime">
       <Position>8</Position>
       <Comment>총 교육시간</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="359" parent="153" name="DelStatus">
+    <column id="364" parent="150" name="DelStatus">
       <Position>9</Position>
       <Comment>상태값</Comment>
       <DataType>varchar(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="360" parent="153" name="FK_PackageCate_TO_Package">
+    <index id="365" parent="150" name="FK_PackageCate_TO_Package">
       <ColNames>PackageCate_no</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="361" parent="153" name="PRIMARY">
+    <key id="366" parent="150" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Package_no</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="362" parent="153" name="FK_PackageCate_TO_Package">
+    <foreign-key id="367" parent="150" name="FK_PackageCate_TO_Package">
       <ColNames>PackageCate_no</ColNames>
-      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefSchemaName>bitacademy_test</RefSchemaName>
       <RefTableName>PackageCate</RefTableName>
       <RefColNames>PackageCate_no</RefColNames>
     </foreign-key>
-    <column id="363" parent="154" name="PackageCate_no">
+    <column id="368" parent="151" name="PackageCate_no">
       <Position>1</Position>
       <Comment>패키지 카테고리 코드</Comment>
       <DataType>int(11)|0s</DataType>
@@ -1790,36 +1741,30 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="364" parent="154" name="CateName">
+    <column id="369" parent="151" name="CateName">
       <Position>2</Position>
       <Comment>카테고리 이름</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="365" parent="154" name="GroupCode">
+    <column id="370" parent="151" name="ParentCode">
       <Position>3</Position>
-      <Comment>그룹코드(패키지)</Comment>
-      <DataType>int(10)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="366" parent="154" name="ParentCode">
-      <Position>4</Position>
       <Comment>부모코드(패키지)</Comment>
       <DataType>int(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="367" parent="154" name="Depth">
-      <Position>5</Position>
-      <Comment>깊이(패키지)</Comment>
-      <DataType>int(10)|0s</DataType>
+    <column id="371" parent="151" name="DelStatus">
+      <Position>4</Position>
+      <Comment>삭제여부</Comment>
+      <DataType>tinyint(1)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="368" parent="154" name="PRIMARY">
+    <key id="372" parent="151" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>PackageCate_no</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="369" parent="155" name="Project_no">
+    <column id="373" parent="152" name="Project_no">
       <Position>1</Position>
       <Comment>프로젝트 코드</Comment>
       <DataType>int(11)|0s</DataType>
@@ -1827,126 +1772,126 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="370" parent="155" name="Curriculum_no">
+    <column id="374" parent="152" name="Curriculum_no">
       <Position>2</Position>
       <Comment>커리큘럼 코드</Comment>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="371" parent="155" name="ProjectName">
+    <column id="375" parent="152" name="ProjectName">
       <Position>3</Position>
       <Comment>프로젝트명</Comment>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="372" parent="155" name="UseLang">
+    <column id="376" parent="152" name="UseLang">
       <Position>4</Position>
       <Comment>사용언어</Comment>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="373" parent="155" name="UseDB">
+    <column id="377" parent="152" name="UseDB">
       <Position>5</Position>
       <Comment>사용DB</Comment>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="374" parent="155" name="Outline">
+    <column id="378" parent="152" name="Outline">
       <Position>6</Position>
       <Comment>개요</Comment>
       <DataType>varchar(500)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="375" parent="155" name="Focus">
+    <column id="379" parent="152" name="Focus">
       <Position>7</Position>
       <Comment>설계의 주안점</Comment>
       <DataType>varchar(500)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="376" parent="155" name="ApplyField">
+    <column id="380" parent="152" name="ApplyField">
       <Position>8</Position>
       <Comment>응용분야</Comment>
       <DataType>varchar(500)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="377" parent="155" name="UseTechnique">
+    <column id="381" parent="152" name="UseTechnique">
       <Position>9</Position>
       <Comment>사용기술</Comment>
       <DataType>varchar(500)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="378" parent="155" name="File_no">
+    <column id="382" parent="152" name="File_no">
       <Position>10</Position>
       <Comment>파일 번호</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="379" parent="155" name="Del">
+    <column id="383" parent="152" name="Del">
       <Position>11</Position>
       <DataType>int(11)|0s</DataType>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="380" parent="155" name="FK_Curriculum_TO_Project">
+    <index id="384" parent="152" name="FK_Curriculum_TO_Project">
       <ColNames>Curriculum_no</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="381" parent="155" name="FK_File_TO_Project">
+    <index id="385" parent="152" name="FK_File_TO_Project">
       <ColNames>File_no</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="382" parent="155" name="PRIMARY">
+    <key id="386" parent="152" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Project_no</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="383" parent="155" name="FK_Curriculum_TO_Project">
+    <foreign-key id="387" parent="152" name="FK_Curriculum_TO_Project">
       <ColNames>Curriculum_no</ColNames>
-      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefSchemaName>bitacademy_test</RefSchemaName>
       <RefTableName>Curriculum</RefTableName>
       <RefColNames>Curriculum_no</RefColNames>
     </foreign-key>
-    <foreign-key id="384" parent="155" name="FK_File_TO_Project">
+    <foreign-key id="388" parent="152" name="FK_File_TO_Project">
       <ColNames>File_no</ColNames>
-      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefSchemaName>bitacademy_test</RefSchemaName>
       <RefTableName>File</RefTableName>
       <RefColNames>File_no</RefColNames>
     </foreign-key>
-    <column id="385" parent="156" name="Project_no">
+    <column id="389" parent="153" name="Project_no">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="386" parent="156" name="User_no">
+    <column id="390" parent="153" name="User_no">
       <Position>2</Position>
       <Comment>유저번호</Comment>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="387" parent="156" name="FK_Project_TO_ProjectMember">
+    <index id="391" parent="153" name="FK_Project_TO_ProjectMember">
       <ColNames>Project_no</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="388" parent="156" name="FK_Users_TO_ProjectMember">
+    <index id="392" parent="153" name="FK_Users_TO_ProjectMember">
       <ColNames>User_no</ColNames>
       <Type>btree</Type>
     </index>
-    <foreign-key id="389" parent="156" name="FK_Project_TO_ProjectMember">
+    <foreign-key id="393" parent="153" name="FK_Project_TO_ProjectMember">
       <ColNames>Project_no</ColNames>
-      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefSchemaName>bitacademy_test</RefSchemaName>
       <RefTableName>Project</RefTableName>
       <RefColNames>Project_no</RefColNames>
     </foreign-key>
-    <foreign-key id="390" parent="156" name="FK_Users_TO_ProjectMember">
+    <foreign-key id="394" parent="153" name="FK_Users_TO_ProjectMember">
       <ColNames>User_no</ColNames>
-      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefSchemaName>bitacademy_test</RefSchemaName>
       <RefTableName>Users</RefTableName>
       <RefColNames>User_no</RefColNames>
     </foreign-key>
-    <column id="391" parent="157" name="Score_no">
+    <column id="395" parent="154" name="Score_no">
       <Position>1</Position>
       <Comment>점수코드</Comment>
       <DataType>int(11)|0s</DataType>
@@ -1954,82 +1899,82 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="392" parent="157" name="Curriculum_no">
+    <column id="396" parent="154" name="Curriculum_no">
       <Position>2</Position>
       <Comment>커리큘럼코드</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="393" parent="157" name="SubInStep_no">
+    <column id="397" parent="154" name="SubInStep_no">
       <Position>3</Position>
       <Comment>단계 내 과목 코드</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="394" parent="157" name="User_no">
+    <column id="398" parent="154" name="User_no">
       <Position>4</Position>
       <Comment>유저번호</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="395" parent="157" name="Score">
+    <column id="399" parent="154" name="Score">
       <Position>5</Position>
       <Comment>점수</Comment>
       <DataType>int(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="396" parent="157" name="File_no">
+    <column id="400" parent="154" name="File_no">
       <Position>6</Position>
       <Comment>파일 번호</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="397" parent="157" name="FK_Curriculum_TO_Score">
+    <index id="401" parent="154" name="FK_Curriculum_TO_Score">
       <ColNames>Curriculum_no</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="398" parent="157" name="FK_SubInStep_TO_Score">
+    <index id="402" parent="154" name="FK_SubInStep_TO_Score">
       <ColNames>SubInStep_no</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="399" parent="157" name="FK_Users_TO_Score">
+    <index id="403" parent="154" name="FK_Users_TO_Score">
       <ColNames>User_no</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="400" parent="157" name="FK_File_TO_Score">
+    <index id="404" parent="154" name="FK_File_TO_Score">
       <ColNames>File_no</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="401" parent="157" name="PRIMARY">
+    <key id="405" parent="154" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Score_no</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="402" parent="157" name="FK_Curriculum_TO_Score">
+    <foreign-key id="406" parent="154" name="FK_Curriculum_TO_Score">
       <ColNames>Curriculum_no</ColNames>
-      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefSchemaName>bitacademy_test</RefSchemaName>
       <RefTableName>Curriculum</RefTableName>
       <RefColNames>Curriculum_no</RefColNames>
     </foreign-key>
-    <foreign-key id="403" parent="157" name="FK_SubInStep_TO_Score">
+    <foreign-key id="407" parent="154" name="FK_SubInStep_TO_Score">
       <ColNames>SubInStep_no</ColNames>
-      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefSchemaName>bitacademy_test</RefSchemaName>
       <RefTableName>SubInStep</RefTableName>
       <RefColNames>SubInStep_no</RefColNames>
     </foreign-key>
-    <foreign-key id="404" parent="157" name="FK_Users_TO_Score">
+    <foreign-key id="408" parent="154" name="FK_Users_TO_Score">
       <ColNames>User_no</ColNames>
-      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefSchemaName>bitacademy_test</RefSchemaName>
       <RefTableName>Users</RefTableName>
       <RefColNames>User_no</RefColNames>
     </foreign-key>
-    <foreign-key id="405" parent="157" name="FK_File_TO_Score">
+    <foreign-key id="409" parent="154" name="FK_File_TO_Score">
       <ColNames>File_no</ColNames>
-      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefSchemaName>bitacademy_test</RefSchemaName>
       <RefTableName>File</RefTableName>
       <RefColNames>File_no</RefColNames>
     </foreign-key>
-    <column id="406" parent="158" name="Step_no">
+    <column id="410" parent="155" name="Step_no">
       <Position>1</Position>
       <Comment>단계 코드</Comment>
       <DataType>int(11)|0s</DataType>
@@ -2037,41 +1982,41 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="407" parent="158" name="Package_no">
+    <column id="411" parent="155" name="Package_no">
       <Position>2</Position>
       <Comment>패키지 코드</Comment>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="408" parent="158" name="StepName">
+    <column id="412" parent="155" name="StepName">
       <Position>3</Position>
       <Comment>단계 이름</Comment>
       <DataType>varchar(500)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="409" parent="158" name="Level">
+    <column id="413" parent="155" name="Level">
       <Position>4</Position>
       <Comment>몇단계</Comment>
       <DataType>int(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="410" parent="158" name="FK_Package_TO_StepInPack">
+    <index id="414" parent="155" name="FK_Package_TO_StepInPack">
       <ColNames>Package_no</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="411" parent="158" name="PRIMARY">
+    <key id="415" parent="155" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Step_no</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="412" parent="158" name="FK_Package_TO_StepInPack">
+    <foreign-key id="416" parent="155" name="FK_Package_TO_StepInPack">
       <ColNames>Package_no</ColNames>
-      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefSchemaName>bitacademy_test</RefSchemaName>
       <RefTableName>Package</RefTableName>
       <RefColNames>Package_no</RefColNames>
     </foreign-key>
-    <column id="413" parent="159" name="SubInStep_no">
+    <column id="417" parent="156" name="SubInStep_no">
       <Position>1</Position>
       <Comment>단계 내 과목 코드</Comment>
       <DataType>int(11)|0s</DataType>
@@ -2079,73 +2024,73 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="414" parent="159" name="Step_no">
+    <column id="418" parent="156" name="Step_no">
       <Position>2</Position>
       <Comment>단계 코드</Comment>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="415" parent="159" name="Subject_no">
+    <column id="419" parent="156" name="Subject_no">
       <Position>3</Position>
       <Comment>과목코드</Comment>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="416" parent="159" name="Content">
+    <column id="420" parent="156" name="Content">
       <Position>4</Position>
       <Comment>과목 내용</Comment>
       <DataType>varchar(500)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="417" parent="159" name="SubHour">
+    <column id="421" parent="156" name="SubHour">
       <Position>5</Position>
       <Comment>과목 시간</Comment>
       <DataType>int(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="418" parent="159" name="File_no">
+    <column id="422" parent="156" name="File_no">
       <Position>6</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="419" parent="159" name="FK_StepInPack_TO_SubInStep">
+    <index id="423" parent="156" name="FK_StepInPack_TO_SubInStep">
       <ColNames>Step_no</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="420" parent="159" name="FK_Subject_TO_SubInStep">
+    <index id="424" parent="156" name="FK_Subject_TO_SubInStep">
       <ColNames>Subject_no</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="421" parent="159" name="FK_File_TO_SubInStep">
+    <index id="425" parent="156" name="FK_File_TO_SubInStep">
       <ColNames>File_no</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="422" parent="159" name="PRIMARY">
+    <key id="426" parent="156" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>SubInStep_no</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="423" parent="159" name="FK_StepInPack_TO_SubInStep">
+    <foreign-key id="427" parent="156" name="FK_StepInPack_TO_SubInStep">
       <ColNames>Step_no</ColNames>
-      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefSchemaName>bitacademy_test</RefSchemaName>
       <RefTableName>StepInPack</RefTableName>
       <RefColNames>Step_no</RefColNames>
     </foreign-key>
-    <foreign-key id="424" parent="159" name="FK_Subject_TO_SubInStep">
+    <foreign-key id="428" parent="156" name="FK_Subject_TO_SubInStep">
       <ColNames>Subject_no</ColNames>
-      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefSchemaName>bitacademy_test</RefSchemaName>
       <RefTableName>Subject</RefTableName>
       <RefColNames>Subject_no</RefColNames>
     </foreign-key>
-    <foreign-key id="425" parent="159" name="FK_File_TO_SubInStep">
+    <foreign-key id="429" parent="156" name="FK_File_TO_SubInStep">
       <ColNames>File_no</ColNames>
-      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefSchemaName>bitacademy_test</RefSchemaName>
       <RefTableName>File</RefTableName>
       <RefColNames>File_no</RefColNames>
     </foreign-key>
-    <column id="426" parent="160" name="Subject_no">
+    <column id="430" parent="157" name="Subject_no">
       <Position>1</Position>
       <Comment>과목코드</Comment>
       <DataType>int(5)|0s</DataType>
@@ -2153,46 +2098,46 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="427" parent="160" name="SubjectCate_no">
+    <column id="431" parent="157" name="SubjectCate_no">
       <Position>2</Position>
       <Comment>과목 카테고리 코드</Comment>
       <DataType>int(5)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="428" parent="160" name="SubjectName">
+    <column id="432" parent="157" name="SubjectName">
       <Position>3</Position>
       <Comment>과목 이름</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="429" parent="160" name="Outline">
+    <column id="433" parent="157" name="Outline">
       <Position>4</Position>
       <Comment>과목 개요</Comment>
       <DataType>text|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="430" parent="160" name="DelStatus">
+    <column id="434" parent="157" name="DelStatus">
       <Position>5</Position>
       <Comment>삭제여부</Comment>
       <DataType>varchar(5)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="431" parent="160" name="FK_SubjectCate_TO_Subject">
+    <index id="435" parent="157" name="FK_SubjectCate_TO_Subject">
       <ColNames>SubjectCate_no</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="432" parent="160" name="PRIMARY">
+    <key id="436" parent="157" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Subject_no</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="433" parent="160" name="FK_SubjectCate_TO_Subject">
+    <foreign-key id="437" parent="157" name="FK_SubjectCate_TO_Subject">
       <ColNames>SubjectCate_no</ColNames>
-      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefSchemaName>bitacademy_test</RefSchemaName>
       <RefTableName>SubjectCate</RefTableName>
       <RefColNames>SubjectCate_no</RefColNames>
     </foreign-key>
-    <column id="434" parent="161" name="SubjectCate_no">
+    <column id="438" parent="158" name="SubjectCate_no">
       <Position>1</Position>
       <Comment>과목 카테고리 코드</Comment>
       <DataType>int(11)|0s</DataType>
@@ -2200,48 +2145,30 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="435" parent="161" name="CateName">
+    <column id="439" parent="158" name="CateName">
       <Position>2</Position>
       <Comment>카테고리 이름</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="436" parent="161" name="GroupCode">
+    <column id="440" parent="158" name="ParentCode">
       <Position>3</Position>
-      <Comment>그룹코드(과목)</Comment>
-      <DataType>int(10)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="437" parent="161" name="ParentCode">
-      <Position>4</Position>
       <Comment>부모코드(과목)</Comment>
       <DataType>int(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="438" parent="161" name="Depth">
-      <Position>5</Position>
-      <Comment>깊이(과목)</Comment>
-      <DataType>int(10)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="439" parent="161" name="OrderCode">
-      <Position>6</Position>
-      <Comment>순서</Comment>
-      <DataType>int(10)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="440" parent="161" name="DelStatus">
-      <Position>7</Position>
+    <column id="441" parent="158" name="DelStatus">
+      <Position>4</Position>
       <Comment>상태값</Comment>
       <DataType>varchar(5)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="441" parent="161" name="PRIMARY">
+    <key id="442" parent="158" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>SubjectCate_no</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="442" parent="162" name="Survey_no">
+    <column id="443" parent="159" name="Survey_no">
       <Position>1</Position>
       <Comment>질문지 코드</Comment>
       <DataType>int(11)|0s</DataType>
@@ -2249,12 +2176,12 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="443" parent="162" name="PRIMARY">
+    <key id="444" parent="159" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Survey_no</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="444" parent="163" name="UserCareer_no">
+    <column id="445" parent="160" name="UserCareer_no">
       <Position>1</Position>
       <Comment>새 컬럼</Comment>
       <DataType>int(11)|0s</DataType>
@@ -2262,83 +2189,83 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="445" parent="163" name="User_no">
+    <column id="446" parent="160" name="User_no">
       <Position>2</Position>
       <Comment>유저번호</Comment>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="446" parent="163" name="StartDate">
+    <column id="447" parent="160" name="StartDate">
       <Position>3</Position>
       <Comment>입사일</Comment>
-      <DataType>date|0s</DataType>
+      <DataType>varchar(30)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="447" parent="163" name="EndDate">
+    <column id="448" parent="160" name="EndDate">
       <Position>4</Position>
       <Comment>퇴사일</Comment>
-      <DataType>date|0s</DataType>
+      <DataType>varchar(30)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="448" parent="163" name="CompName">
+    <column id="449" parent="160" name="CompName">
       <Position>5</Position>
       <Comment>주체(회사, 공모전,학교)</Comment>
       <DataType>varchar(500)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="449" parent="163" name="DevPart">
+    <column id="450" parent="160" name="DevPart">
       <Position>6</Position>
       <Comment>주업무/개발프로그램</Comment>
       <DataType>text|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="450" parent="163" name="Role">
+    <column id="451" parent="160" name="Role">
       <Position>7</Position>
       <Comment>직위(직무)</Comment>
       <DataType>varchar(500)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="451" parent="163" name="TelePhone">
+    <column id="452" parent="160" name="TelePhone">
       <Position>8</Position>
       <Comment>회사전화</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="452" parent="163" name="CompanyAddress">
+    <column id="453" parent="160" name="CompanyAddress">
       <Position>9</Position>
       <Comment>회사주소</Comment>
       <DataType>varchar(2000)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="453" parent="163" name="State">
+    <column id="454" parent="160" name="State">
       <Position>10</Position>
       <Comment>재직여부</Comment>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="454" parent="163" name="Department">
+    <column id="455" parent="160" name="Department">
       <Position>11</Position>
       <Comment>부서</Comment>
-      <DataType>varchar(20)|0s</DataType>
+      <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="455" parent="163" name="FK_Users_TO_UserCareer">
+    <index id="456" parent="160" name="FK_Users_TO_UserCareer">
       <ColNames>User_no</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="456" parent="163" name="PRIMARY">
+    <key id="457" parent="160" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>UserCareer_no</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="457" parent="163" name="FK_Users_TO_UserCareer">
+    <foreign-key id="458" parent="160" name="FK_Users_TO_UserCareer">
       <ColNames>User_no</ColNames>
-      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefSchemaName>bitacademy_test</RefSchemaName>
       <RefTableName>Users</RefTableName>
       <RefColNames>User_no</RefColNames>
     </foreign-key>
-    <column id="458" parent="164" name="UserScholarship_no">
+    <column id="459" parent="161" name="UserScholarship_no">
       <Position>1</Position>
       <Comment>새 컬럼</Comment>
       <DataType>int(11)|0s</DataType>
@@ -2346,78 +2273,2197 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="459" parent="164" name="User_no">
+    <column id="460" parent="161" name="User_no">
       <Position>2</Position>
       <Comment>유저번호</Comment>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="460" parent="164" name="StartDate">
+    <column id="461" parent="161" name="StartDate">
       <Position>3</Position>
       <Comment>기간(부터)</Comment>
       <DataType>varchar(15)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="461" parent="164" name="EndDate">
+    <column id="462" parent="161" name="EndDate">
       <Position>4</Position>
       <Comment>기간(까지)</Comment>
       <DataType>varchar(15)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="462" parent="164" name="School">
+    <column id="463" parent="161" name="School">
       <Position>5</Position>
       <Comment>학교</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="463" parent="164" name="State">
+    <column id="464" parent="161" name="State">
       <Position>6</Position>
       <Comment>졸업여부(상태)</Comment>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="464" parent="164" name="Location">
+    <column id="465" parent="161" name="Location">
       <Position>7</Position>
       <Comment>소재지</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="465" parent="164" name="Degree">
+    <column id="466" parent="161" name="Degree">
       <Position>8</Position>
       <Comment>학위</Comment>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="466" parent="164" name="Major">
+    <column id="467" parent="161" name="Major">
       <Position>9</Position>
       <Comment>전공</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="467" parent="164" name="SubMajor">
+    <column id="468" parent="161" name="SubMajor">
       <Position>10</Position>
       <Comment>부전공</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="468" parent="164" name="FK_Users_TO_UserScholarship">
+    <index id="469" parent="161" name="FK_Users_TO_UserScholarship">
       <ColNames>User_no</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="469" parent="164" name="PRIMARY">
+    <key id="470" parent="161" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>UserScholarship_no</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="470" parent="164" name="FK_Users_TO_UserScholarship">
+    <foreign-key id="471" parent="161" name="FK_Users_TO_UserScholarship">
+      <ColNames>User_no</ColNames>
+      <RefSchemaName>bitacademy_test</RefSchemaName>
+      <RefTableName>Users</RefTableName>
+      <RefColNames>User_no</RefColNames>
+    </foreign-key>
+    <column id="472" parent="162" name="UserTraining_no">
+      <Position>1</Position>
+      <Comment>새 컬럼</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="473" parent="162" name="User_no">
+      <Position>2</Position>
+      <Comment>유저번호</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="474" parent="162" name="StartDate">
+      <Position>3</Position>
+      <Comment>기간(부터)</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="475" parent="162" name="EndDate">
+      <Position>4</Position>
+      <Comment>기간(까지)</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="476" parent="162" name="EduCenterName">
+      <Position>5</Position>
+      <Comment>교육기관</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="477" parent="162" name="EduCourseName">
+      <Position>6</Position>
+      <Comment>교육과정</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="478" parent="162" name="Content">
+      <Position>7</Position>
+      <Comment>주요교육내용</Comment>
+      <DataType>text|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="479" parent="162" name="FK_Users_TO_UserTrainning">
+      <ColNames>User_no</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="480" parent="162" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>UserTraining_no</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="481" parent="162" name="FK_Users_TO_UserTrainning">
+      <ColNames>User_no</ColNames>
+      <RefSchemaName>bitacademy_test</RefSchemaName>
+      <RefTableName>Users</RefTableName>
+      <RefColNames>User_no</RefColNames>
+    </foreign-key>
+    <column id="482" parent="163" name="User_no">
+      <Position>1</Position>
+      <Comment>유저번호</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="483" parent="163" name="AuthCode">
+      <Position>2</Position>
+      <Comment>권한코드</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;1&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="484" parent="163" name="NameHan">
+      <Position>3</Position>
+      <Comment>한글이름</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="485" parent="163" name="NameEng">
+      <Position>4</Position>
+      <Comment>영어이름</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="486" parent="163" name="LoginID">
+      <Position>5</Position>
+      <Comment>아이디</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="487" parent="163" name="Password">
+      <Position>6</Position>
+      <Comment>패스워드</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="488" parent="163" name="BirthDate">
+      <Position>7</Position>
+      <Comment>생년월일</Comment>
+      <DataType>char(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="489" parent="163" name="StudResNum">
+      <Position>8</Position>
+      <Comment>주민등록번호</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="490" parent="163" name="Gender">
+      <Position>9</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="491" parent="163" name="Address">
+      <Position>10</Position>
+      <Comment>현주소</Comment>
+      <DataType>varchar(300)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="492" parent="163" name="FamilyAddress">
+      <Position>11</Position>
+      <Comment>등본주소</Comment>
+      <DataType>varchar(300)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="493" parent="163" name="PostNum">
+      <Position>12</Position>
+      <Comment>우편번호</Comment>
+      <DataType>varchar(7)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="494" parent="163" name="Cellphone">
+      <Position>13</Position>
+      <Comment>핸드폰번호</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="495" parent="163" name="Telephone">
+      <Position>14</Position>
+      <Comment>전화번호</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="496" parent="163" name="Email">
+      <Position>15</Position>
+      <Comment>이메일</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="497" parent="163" name="HomePage">
+      <Position>16</Position>
+      <Comment>홈페이지</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="498" parent="163" name="Bank">
+      <Position>17</Position>
+      <Comment>은행명</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="499" parent="163" name="Depositor">
+      <Position>18</Position>
+      <Comment>예금주</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="500" parent="163" name="AccountNum">
+      <Position>19</Position>
+      <Comment>계좌번호</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="501" parent="163" name="MillArm">
+      <Position>20</Position>
+      <Comment>병과</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="502" parent="163" name="MillRank">
+      <Position>21</Position>
+      <Comment>계급</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="503" parent="163" name="MillEnrollDate">
+      <Position>22</Position>
+      <Comment>입대일</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="504" parent="163" name="MillDischargeDate">
+      <Position>23</Position>
+      <Comment>전역일</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="505" parent="163" name="MillIncompletReason">
+      <Position>24</Position>
+      <Comment>미필사유</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="506" parent="163" name="Language">
+      <Position>25</Position>
+      <Comment>어학</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="507" parent="163" name="OS">
+      <Position>26</Position>
+      <Comment>사용OS</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="508" parent="163" name="ProLang">
+      <Position>27</Position>
+      <Comment>사용언어</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="509" parent="163" name="Magazine">
+      <Position>28</Position>
+      <Comment>정기구독잡지</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="510" parent="163" name="Newspaper">
+      <Position>29</Position>
+      <Comment>정기구독신문</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="511" parent="163" name="AfterPlan">
+      <Position>30</Position>
+      <Comment>수료후희망</Comment>
+      <DataType>varchar(2000)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="512" parent="163" name="Motive">
+      <Position>31</Position>
+      <Comment>지원동기</Comment>
+      <DataType>varchar(2000)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="513" parent="163" name="LearningContent">
+      <Position>32</Position>
+      <Comment>학습내용</Comment>
+      <DataType>varchar(2000)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="514" parent="163" name="ConsultContent">
+      <Position>33</Position>
+      <Comment>상담내역</Comment>
+      <DataType>varchar(2000)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="515" parent="163" name="Thesis">
+      <Position>34</Position>
+      <Comment>학위논문 제목/ 내용</Comment>
+      <DataType>varchar(2000)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="516" parent="163" name="File_no">
+      <Position>35</Position>
+      <Comment>파일 번호</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="517" parent="163" name="FK_File_TO_Users">
+      <ColNames>File_no</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="518" parent="163" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>User_no</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="519" parent="163" name="FK_File_TO_Users">
+      <ColNames>File_no</ColNames>
+      <RefSchemaName>bitacademy_test</RefSchemaName>
+      <RefTableName>File</RefTableName>
+      <RefColNames>File_no</RefColNames>
+    </foreign-key>
+    <column id="520" parent="164" name="username">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="521" parent="164" name="gender">
+      <Position>2</Position>
+      <DataType>varchar(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="522" parent="164" name="cellphone">
+      <Position>3</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="523" parent="164" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>username</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="524" parent="165" name="SubInStep_no">
+      <Position>1</Position>
+      <Comment>단계 내 과목 코드</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="525" parent="165" name="Step_no">
+      <Position>2</Position>
+      <Comment>단계 코드</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="526" parent="165" name="Subject_no">
+      <Position>3</Position>
+      <Comment>과목코드</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="527" parent="165" name="SubjectName">
+      <Position>4</Position>
+      <Comment>과목 이름</Comment>
+      <DataType>varchar(50)|0s</DataType>
+    </column>
+    <column id="528" parent="166" name="AfterService_no">
+      <Position>1</Position>
+      <Comment>새 컬럼</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="529" parent="166" name="User_no">
+      <Position>2</Position>
+      <Comment>유저번호</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="530" parent="166" name="CompName">
+      <Position>3</Position>
+      <Comment>회사</Comment>
+      <DataType>varchar(200)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="531" parent="166" name="Department">
+      <Position>4</Position>
+      <Comment>부서</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="532" parent="166" name="State">
+      <Position>5</Position>
+      <Comment>재직여부</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="533" parent="166" name="Position">
+      <Position>6</Position>
+      <Comment>직책</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="534" parent="166" name="PeriodFr">
+      <Position>7</Position>
+      <Comment>입사일</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="535" parent="166" name="PeriodTo">
+      <Position>8</Position>
+      <Comment>퇴사일</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="536" parent="166" name="TelePhone">
+      <Position>9</Position>
+      <Comment>회사전화</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="537" parent="166" name="CompanyAddress">
+      <Position>10</Position>
+      <Comment>회사정보</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="538" parent="166" name="FK_Users_TO_AfterService">
+      <ColNames>User_no</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="539" parent="166" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>AfterService_no</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="540" parent="166" name="FK_Users_TO_AfterService">
+      <ColNames>User_no</ColNames>
+      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefTableName>Users</RefTableName>
+      <RefColNames>User_no</RefColNames>
+    </foreign-key>
+    <column id="541" parent="167" name="Applicant_no">
+      <Position>1</Position>
+      <Comment>지원자 코드</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="542" parent="167" name="User_no">
+      <Position>2</Position>
+      <Comment>유저번호</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="543" parent="167" name="Curriculum_no">
+      <Position>3</Position>
+      <Comment>커리큘럼코드</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="544" parent="167" name="ApplyDate">
+      <Position>4</Position>
+      <Comment>지원일자</Comment>
+      <DataType>date|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="545" parent="167" name="ApplyType">
+      <Position>5</Position>
+      <Comment>지원종류</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="546" parent="167" name="TestDate">
+      <Position>6</Position>
+      <Comment>전형일시</Comment>
+      <DataType>date|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="547" parent="167" name="TestLang">
+      <Position>7</Position>
+      <Comment>전형과목</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="548" parent="167" name="TestScore">
+      <Position>8</Position>
+      <Comment>전형점수</Comment>
+      <DataType>int(5)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="549" parent="167" name="TestResult">
+      <Position>9</Position>
+      <Comment>전형결과</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="550" parent="167" name="Coment">
+      <Position>10</Position>
+      <Comment>면접위원 의견</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="551" parent="167" name="Deposit">
+      <Position>11</Position>
+      <Comment>입금여부</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="552" parent="167" name="DepositAmount">
+      <Position>12</Position>
+      <Comment>계좌입금액</Comment>
+      <DataType>int(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="553" parent="167" name="CardPayDate">
+      <Position>13</Position>
+      <Comment>카드결제일</Comment>
+      <DataType>date|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="554" parent="167" name="CardPayAmount">
+      <Position>14</Position>
+      <Comment>카드결제액</Comment>
+      <DataType>int(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="555" parent="167" name="CardPayState">
+      <Position>15</Position>
+      <Comment>카드결제상태</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="556" parent="167" name="DepositDate">
+      <Position>16</Position>
+      <Comment>계좌입금일</Comment>
+      <DataType>date|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="557" parent="167" name="TotalPay">
+      <Position>17</Position>
+      <Comment>결제액 계</Comment>
+      <DataType>int(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="558" parent="167" name="Note">
+      <Position>18</Position>
+      <Comment>입금 비고</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="559" parent="167" name="State">
+      <Position>19</Position>
+      <Comment>합격/불합격/비트생/수료/비수료</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="560" parent="167" name="Consult">
+      <Position>20</Position>
+      <Comment>상담내역</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="561" parent="167" name="FK_Users_TO_ApplyInfo">
+      <ColNames>User_no</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="562" parent="167" name="FK_Curriculum_TO_ApplyInfo">
+      <ColNames>Curriculum_no</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="563" parent="167" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Applicant_no</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="564" parent="167" name="FK_Users_TO_ApplyInfo">
+      <ColNames>User_no</ColNames>
+      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefTableName>Users</RefTableName>
+      <RefColNames>User_no</RefColNames>
+    </foreign-key>
+    <foreign-key id="565" parent="167" name="FK_Curriculum_TO_ApplyInfo">
+      <ColNames>Curriculum_no</ColNames>
+      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefTableName>Curriculum</RefTableName>
+      <RefColNames>Curriculum_no</RefColNames>
+    </foreign-key>
+    <column id="566" parent="168" name="Code_no">
+      <Position>1</Position>
+      <Comment>코드인덱스</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="567" parent="168" name="CodeNumber_no2">
+      <Position>2</Position>
+      <Comment>코드번호 인덱스</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="568" parent="168" name="Result">
+      <Position>3</Position>
+      <Comment>결과값</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="569" parent="168" name="Del">
+      <Position>4</Position>
+      <Comment>사용여부</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="570" parent="168" name="Value">
+      <Position>5</Position>
+      <Comment>벨류값</Comment>
+      <DataType>int(5)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="571" parent="168" name="CodeNumber_no">
+      <ColNames>CodeNumber_no2</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="572" parent="168" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Code_no</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="573" parent="168" name="CodeNumber_no">
+      <ColNames>CodeNumber_no2</ColNames>
+      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefTableName>CodeNumber</RefTableName>
+      <RefColNames>CodeNumber_no</RefColNames>
+    </foreign-key>
+    <column id="574" parent="169" name="CodeNumber_no">
+      <Position>1</Position>
+      <Comment>코드번호 인덱스</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="575" parent="169" name="CodeName">
+      <Position>2</Position>
+      <Comment>구분명</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="576" parent="169" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>CodeNumber_no</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="577" parent="170" name="Company_no">
+      <Position>1</Position>
+      <Comment>company_no</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="578" parent="170" name="CompName">
+      <Position>2</Position>
+      <Comment>회사명</Comment>
+      <DataType>varchar(200)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="579" parent="170" name="CompResNum">
+      <Position>3</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="580" parent="170" name="Address">
+      <Position>4</Position>
+      <Comment>주소</Comment>
+      <DataType>varchar(400)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="581" parent="170" name="Tel">
+      <Position>5</Position>
+      <Comment>전화</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="582" parent="170" name="StockMarket">
+      <Position>6</Position>
+      <Comment>상장여부</Comment>
+      <DataType>varchar(200)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="583" parent="170" name="Welfare">
+      <Position>7</Position>
+      <DataType>varchar(4000)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="584" parent="170" name="Capital">
+      <Position>8</Position>
+      <Comment>자본금</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="585" parent="170" name="YearSell">
+      <Position>9</Position>
+      <Comment>연매출액</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="586" parent="170" name="StaffNum">
+      <Position>10</Position>
+      <Comment>직원수</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="587" parent="170" name="HomePage">
+      <Position>11</Position>
+      <Comment>홈페이지</Comment>
+      <DataType>varchar(400)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="588" parent="170" name="PostCode">
+      <Position>12</Position>
+      <Comment>우편번호</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="589" parent="170" name="Introduction">
+      <Position>13</Position>
+      <Comment>회사소개</Comment>
+      <DataType>text|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="590" parent="170" name="File_no">
+      <Position>14</Position>
+      <Comment>파일 번호</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="591" parent="170" name="Business">
+      <Position>15</Position>
+      <Comment>주력사업</Comment>
+      <DataType>varchar(4000)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="592" parent="170" name="FK_File_TO_Company">
+      <ColNames>File_no</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="593" parent="170" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Company_no</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="594" parent="170" name="FK_File_TO_Company">
+      <ColNames>File_no</ColNames>
+      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefTableName>File</RefTableName>
+      <RefColNames>File_no</RefColNames>
+    </foreign-key>
+    <column id="595" parent="171" name="Curriculum_no">
+      <Position>1</Position>
+      <Comment>커리큘럼코드</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="596" parent="171" name="Package_no">
+      <Position>2</Position>
+      <Comment>패키지 코드</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="597" parent="171" name="CurriculumCate_no">
+      <Position>3</Position>
+      <Comment>커리큘럼 카테고리 코드</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="598" parent="171" name="CurriName">
+      <Position>4</Position>
+      <Comment>커리큘럼 이름</Comment>
+      <DataType>varchar(200)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="599" parent="171" name="StartDate">
+      <Position>5</Position>
+      <Comment>시작일</Comment>
+      <DataType>date|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="600" parent="171" name="EndDate">
+      <Position>6</Position>
+      <Comment>종료일</Comment>
+      <DataType>date|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="601" parent="171" name="Time">
+      <Position>7</Position>
+      <Comment>강의시간</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="602" parent="171" name="MaxCnt">
+      <Position>8</Position>
+      <Comment>정원</Comment>
+      <DataType>int(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="603" parent="171" name="Price">
+      <Position>9</Position>
+      <Comment>교육비</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="604" parent="171" name="Support">
+      <Position>10</Position>
+      <Comment>교육지원</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="605" parent="171" name="ManagerInfo">
+      <Position>11</Position>
+      <Comment>문의</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="606" parent="171" name="State">
+      <Position>12</Position>
+      <Comment>상태</Comment>
+      <DataType>int(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="607" parent="171" name="MainViewFlag">
+      <Position>13</Position>
+      <Comment>메인 노출 여부</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="608" parent="171" name="DetailViewFlag">
+      <Position>14</Position>
+      <Comment>상세 노출여부</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="609" parent="171" name="CurriNickname">
+      <Position>15</Position>
+      <Comment>커리큘럼별명&#xd;
+</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="610" parent="171" name="FK_Package_TO_Curriculum">
+      <ColNames>Package_no</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="611" parent="171" name="FK_CurriculumCate_TO_Curriculum">
+      <ColNames>CurriculumCate_no</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="612" parent="171" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Curriculum_no</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="613" parent="171" name="FK_Package_TO_Curriculum">
+      <ColNames>Package_no</ColNames>
+      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefTableName>Package</RefTableName>
+      <RefColNames>Package_no</RefColNames>
+    </foreign-key>
+    <foreign-key id="614" parent="171" name="FK_CurriculumCate_TO_Curriculum">
+      <ColNames>CurriculumCate_no</ColNames>
+      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefTableName>CurriculumCate</RefTableName>
+      <RefColNames>CurriculumCate_no</RefColNames>
+    </foreign-key>
+    <column id="615" parent="172" name="CurriculumCate_no">
+      <Position>1</Position>
+      <Comment>커리큘럼 카테고리 코드</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="616" parent="172" name="CateName">
+      <Position>2</Position>
+      <Comment>카테고리 이름</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="617" parent="172" name="GroupCode">
+      <Position>3</Position>
+      <Comment>그룹코드(커리큘럼)</Comment>
+      <DataType>int(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="618" parent="172" name="ParentCode">
+      <Position>4</Position>
+      <Comment>부모코드(커리큘럼)</Comment>
+      <DataType>int(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="619" parent="172" name="Depth">
+      <Position>5</Position>
+      <Comment>깊이(패키지)</Comment>
+      <DataType>int(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="620" parent="172" name="Del">
+      <Position>6</Position>
+      <Comment>삭제여부</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="621" parent="172" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>CurriculumCate_no</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="622" parent="173" name="Evaluation_no">
+      <Position>1</Position>
+      <Comment>강의평가코드</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="623" parent="173" name="Curriculum_no">
+      <Position>2</Position>
+      <Comment>커리큘럼코드</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="624" parent="173" name="User_no">
+      <Position>3</Position>
+      <Comment>유저번호</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="625" parent="173" name="Survey_no">
+      <Position>4</Position>
+      <Comment>질문지 코드</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="626" parent="173" name="SubInStep_no">
+      <Position>5</Position>
+      <Comment>단계 내 과목 코드</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="627" parent="173" name="FK_Curriculum_TO_Evaluation">
+      <ColNames>Curriculum_no</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="628" parent="173" name="FK_Users_TO_Evaluation">
+      <ColNames>User_no</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="629" parent="173" name="FK_Survey_TO_Evaluation">
+      <ColNames>Survey_no</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="630" parent="173" name="FK_SubInStep_TO_Evaluation">
+      <ColNames>SubInStep_no</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="631" parent="173" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Evaluation_no</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="632" parent="173" name="FK_Curriculum_TO_Evaluation">
+      <ColNames>Curriculum_no</ColNames>
+      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefTableName>Curriculum</RefTableName>
+      <RefColNames>Curriculum_no</RefColNames>
+    </foreign-key>
+    <foreign-key id="633" parent="173" name="FK_Users_TO_Evaluation">
+      <ColNames>User_no</ColNames>
+      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefTableName>Users</RefTableName>
+      <RefColNames>User_no</RefColNames>
+    </foreign-key>
+    <foreign-key id="634" parent="173" name="FK_Survey_TO_Evaluation">
+      <ColNames>Survey_no</ColNames>
+      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefTableName>Survey</RefTableName>
+      <RefColNames>Survey_no</RefColNames>
+    </foreign-key>
+    <foreign-key id="635" parent="173" name="FK_SubInStep_TO_Evaluation">
+      <ColNames>SubInStep_no</ColNames>
+      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefTableName>SubInStep</RefTableName>
+      <RefColNames>SubInStep_no</RefColNames>
+    </foreign-key>
+    <column id="636" parent="174" name="File_no">
+      <Position>1</Position>
+      <Comment>파일 번호</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="637" parent="174" name="FileSize">
+      <Position>2</Position>
+      <Comment>파일 사이즈</Comment>
+      <DataType>int(200)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="638" parent="174" name="FilePath">
+      <Position>3</Position>
+      <Comment>파일 경로</Comment>
+      <DataType>varchar(1000)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="639" parent="174" name="FileName">
+      <Position>4</Position>
+      <Comment>파일이름</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="640" parent="174" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>File_no</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="641" parent="175" name="Gisu_no">
+      <Position>1</Position>
+      <Comment>인덱스</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="642" parent="175" name="GisuName">
+      <Position>2</Position>
+      <Comment>기수이름</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="643" parent="175" name="Curriculum_no">
+      <Position>3</Position>
+      <Comment>커리큘럼코드</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="644" parent="175" name="FK_Curriculum_TO_Gisu">
+      <ColNames>Curriculum_no</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="645" parent="175" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Gisu_no</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="646" parent="175" name="FK_Curriculum_TO_Gisu">
+      <ColNames>Curriculum_no</ColNames>
+      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefTableName>Curriculum</RefTableName>
+      <RefColNames>Curriculum_no</RefColNames>
+    </foreign-key>
+    <column id="647" parent="176" name="Interview_no">
+      <Position>1</Position>
+      <Comment>새 컬럼2</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="648" parent="176" name="User_no">
+      <Position>2</Position>
+      <Comment>유저번호</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="649" parent="176" name="Company_no">
+      <Position>3</Position>
+      <Comment>company_no</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="650" parent="176" name="Request_no">
+      <Position>4</Position>
+      <Comment>공고no</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="651" parent="176" name="Result">
+      <Position>5</Position>
+      <Comment>면접결과</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="652" parent="176" name="FK_Users_TO_Interview">
+      <ColNames>User_no</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="653" parent="176" name="FK_Company_TO_Interview">
+      <ColNames>Company_no</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="654" parent="176" name="FK_JobRequest_TO_Interview">
+      <ColNames>Request_no</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="655" parent="176" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Interview_no</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="656" parent="176" name="FK_Users_TO_Interview">
+      <ColNames>User_no</ColNames>
+      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefTableName>Users</RefTableName>
+      <RefColNames>User_no</RefColNames>
+    </foreign-key>
+    <foreign-key id="657" parent="176" name="FK_Company_TO_Interview">
+      <ColNames>Company_no</ColNames>
+      <RefSchemaName>bitacademy_test</RefSchemaName>
+      <RefTableName>Company</RefTableName>
+      <RefColNames>Company_no</RefColNames>
+    </foreign-key>
+    <foreign-key id="658" parent="176" name="FK_JobRequest_TO_Interview">
+      <ColNames>Request_no</ColNames>
+      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefTableName>JobRequest</RefTableName>
+      <RefColNames>Request_no</RefColNames>
+    </foreign-key>
+    <column id="659" parent="177" name="Request_no">
+      <Position>1</Position>
+      <Comment>공고no</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="660" parent="177" name="Company_no">
+      <Position>2</Position>
+      <Comment>company_no</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="661" parent="177" name="HireCnt">
+      <Position>3</Position>
+      <Comment>채용인원</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="662" parent="177" name="UseLang">
+      <Position>4</Position>
+      <Comment>사용언어</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="663" parent="177" name="UseOS">
+      <Position>5</Position>
+      <Comment>사용OS</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="664" parent="177" name="UseDB">
+      <Position>6</Position>
+      <Comment>사용DB</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="665" parent="177" name="InterviewDate">
+      <Position>7</Position>
+      <Comment>면접일정</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="666" parent="177" name="Career">
+      <Position>8</Position>
+      <Comment>경력여부</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="667" parent="177" name="Requirement">
+      <Position>9</Position>
+      <Comment>자격요건(석사,대졸)</Comment>
+      <DataType>varchar(200)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="668" parent="177" name="YearIncome">
+      <Position>10</Position>
+      <Comment>연봉</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="669" parent="177" name="Major">
+      <Position>11</Position>
+      <Comment>학과</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="670" parent="177" name="Advantage">
+      <Position>12</Position>
+      <Comment>우대조건</Comment>
+      <DataType>varchar(1000)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="671" parent="177" name="ContractType">
+      <Position>13</Position>
+      <Comment>고용형태</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="672" parent="177" name="Field">
+      <Position>14</Position>
+      <Comment>모집부문</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="673" parent="177" name="Procedures">
+      <Position>15</Position>
+      <Comment>전형절차</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="674" parent="177" name="ReqDocument">
+      <Position>16</Position>
+      <Comment>제출서류</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="675" parent="177" name="ReqDetail">
+      <Position>17</Position>
+      <Comment>요구사항</Comment>
+      <DataType>varchar(4000)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="676" parent="177" name="Telephone">
+      <Position>18</Position>
+      <Comment>전화번호(담당자)</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="677" parent="177" name="Fax">
+      <Position>19</Position>
+      <Comment>팩스(담당자)</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="678" parent="177" name="Cellphone">
+      <Position>20</Position>
+      <Comment>휴대폰(담당자</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="679" parent="177" name="Email">
+      <Position>21</Position>
+      <Comment>e-mail(담당자)</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="680" parent="177" name="MgrName">
+      <Position>22</Position>
+      <Comment>이름(담당자)</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="681" parent="177" name="Department">
+      <Position>23</Position>
+      <Comment>부서(담당자</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="682" parent="177" name="Position">
+      <Position>24</Position>
+      <Comment>직책(담당자)</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="683" parent="177" name="Etc">
+      <Position>25</Position>
+      <Comment>기타사항</Comment>
+      <DataType>varchar(1000)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="684" parent="177" name="Post">
+      <Position>26</Position>
+      <Comment>게시유무</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="685" parent="177" name="Black">
+      <Position>27</Position>
+      <Comment>블랙</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="686" parent="177" name="ReceiptDate">
+      <Position>28</Position>
+      <Comment>접수일</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="687" parent="177" name="Employment">
+      <Position>29</Position>
+      <Comment>상시채용</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="688" parent="177" name="JobRequest_Company_Company_no_fk">
+      <ColNames>Company_no</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="689" parent="177" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Request_no</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="690" parent="177" name="JobRequest_Company_Company_no_fk">
+      <ColNames>Company_no</ColNames>
+      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefTableName>Company</RefTableName>
+      <RefColNames>Company_no</RefColNames>
+    </foreign-key>
+    <column id="691" parent="178" name="LectureReport_no">
+      <Position>1</Position>
+      <Comment>index</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="692" parent="178" name="Curriculum_no">
+      <Position>2</Position>
+      <Comment>커리큘럼코드</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="693" parent="178" name="Subject">
+      <Position>3</Position>
+      <Comment>훈련과목</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="694" parent="178" name="Content">
+      <Position>4</Position>
+      <Comment>훈련내용</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="695" parent="178" name="Teacher">
+      <Position>5</Position>
+      <Comment>담당교사</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="696" parent="178" name="Etc">
+      <Position>6</Position>
+      <Comment>비고</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="697" parent="178" name="Period">
+      <Position>7</Position>
+      <Comment>교시</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="698" parent="178" name="ClassDate">
+      <Position>8</Position>
+      <Comment>수업일자</Comment>
+      <DataType>date|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="699" parent="178" name="FK_Curriculum_TO_LectureReport">
+      <ColNames>Curriculum_no</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="700" parent="178" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>LectureReport_no</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="701" parent="178" name="FK_Curriculum_TO_LectureReport">
+      <ColNames>Curriculum_no</ColNames>
+      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefTableName>Curriculum</RefTableName>
+      <RefColNames>Curriculum_no</RefColNames>
+    </foreign-key>
+    <column id="702" parent="179" name="License_no">
+      <Position>1</Position>
+      <Comment>새 컬럼</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="703" parent="179" name="User_no">
+      <Position>2</Position>
+      <Comment>유저번호</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="704" parent="179" name="LiceName">
+      <Position>3</Position>
+      <Comment>자격/수상명</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="705" parent="179" name="AcquireDate">
+      <Position>4</Position>
+      <Comment>취득일</Comment>
+      <DataType>varchar(12)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="706" parent="179" name="IssueOrgan">
+      <Position>5</Position>
+      <Comment>발급기관</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="707" parent="179" name="Score">
+      <Position>6</Position>
+      <Comment>비고(점수)</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="708" parent="179" name="FK_Users_TO_Licence">
+      <ColNames>User_no</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="709" parent="179" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>License_no</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="710" parent="179" name="FK_Users_TO_Licence">
+      <ColNames>User_no</ColNames>
+      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefTableName>Users</RefTableName>
+      <RefColNames>User_no</RefColNames>
+    </foreign-key>
+    <column id="711" parent="180" name="Package_no">
+      <Position>1</Position>
+      <Comment>패키지 코드</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="712" parent="180" name="PackageCate_no">
+      <Position>2</Position>
+      <Comment>패키지 카테고리 코드</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="713" parent="180" name="UseStatus">
+      <Position>3</Position>
+      <Comment>사용여부</Comment>
+      <DataType>tinyint(1)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="714" parent="180" name="PackageName">
+      <Position>4</Position>
+      <Comment>패키지 이름</Comment>
+      <DataType>varchar(200)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="715" parent="180" name="Goal">
+      <Position>5</Position>
+      <Comment>목적 및 목표</Comment>
+      <DataType>varchar(2000)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="716" parent="180" name="Content">
+      <Position>6</Position>
+      <Comment>훈련 내용</Comment>
+      <DataType>varchar(2000)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="717" parent="180" name="Qualification">
+      <Position>7</Position>
+      <Comment>대상 조건</Comment>
+      <DataType>varchar(2000)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="718" parent="180" name="TotalTime">
+      <Position>8</Position>
+      <Comment>총 교육시간</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="719" parent="180" name="DelStatus">
+      <Position>9</Position>
+      <Comment>상태값</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="720" parent="180" name="FK_PackageCate_TO_Package">
+      <ColNames>PackageCate_no</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="721" parent="180" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Package_no</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="722" parent="180" name="FK_PackageCate_TO_Package">
+      <ColNames>PackageCate_no</ColNames>
+      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefTableName>PackageCate</RefTableName>
+      <RefColNames>PackageCate_no</RefColNames>
+    </foreign-key>
+    <column id="723" parent="181" name="PackageCate_no">
+      <Position>1</Position>
+      <Comment>패키지 카테고리 코드</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="724" parent="181" name="CateName">
+      <Position>2</Position>
+      <Comment>카테고리 이름</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="725" parent="181" name="GroupCode">
+      <Position>3</Position>
+      <Comment>그룹코드(패키지)</Comment>
+      <DataType>int(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="726" parent="181" name="ParentCode">
+      <Position>4</Position>
+      <Comment>부모코드(패키지)</Comment>
+      <DataType>int(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="727" parent="181" name="Depth">
+      <Position>5</Position>
+      <Comment>깊이(패키지)</Comment>
+      <DataType>int(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="728" parent="181" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>PackageCate_no</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="729" parent="182" name="Project_no">
+      <Position>1</Position>
+      <Comment>프로젝트 코드</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="730" parent="182" name="Curriculum_no">
+      <Position>2</Position>
+      <Comment>커리큘럼 코드</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="731" parent="182" name="ProjectName">
+      <Position>3</Position>
+      <Comment>프로젝트명</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="732" parent="182" name="UseLang">
+      <Position>4</Position>
+      <Comment>사용언어</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="733" parent="182" name="UseDB">
+      <Position>5</Position>
+      <Comment>사용DB</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="734" parent="182" name="Outline">
+      <Position>6</Position>
+      <Comment>개요</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="735" parent="182" name="Focus">
+      <Position>7</Position>
+      <Comment>설계의 주안점</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="736" parent="182" name="ApplyField">
+      <Position>8</Position>
+      <Comment>응용분야</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="737" parent="182" name="UseTechnique">
+      <Position>9</Position>
+      <Comment>사용기술</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="738" parent="182" name="File_no">
+      <Position>10</Position>
+      <Comment>파일 번호</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="739" parent="182" name="Del">
+      <Position>11</Position>
+      <DataType>int(11)|0s</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="740" parent="182" name="FK_Curriculum_TO_Project">
+      <ColNames>Curriculum_no</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="741" parent="182" name="FK_File_TO_Project">
+      <ColNames>File_no</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="742" parent="182" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Project_no</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="743" parent="182" name="FK_Curriculum_TO_Project">
+      <ColNames>Curriculum_no</ColNames>
+      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefTableName>Curriculum</RefTableName>
+      <RefColNames>Curriculum_no</RefColNames>
+    </foreign-key>
+    <foreign-key id="744" parent="182" name="FK_File_TO_Project">
+      <ColNames>File_no</ColNames>
+      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefTableName>File</RefTableName>
+      <RefColNames>File_no</RefColNames>
+    </foreign-key>
+    <column id="745" parent="183" name="Project_no">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="746" parent="183" name="User_no">
+      <Position>2</Position>
+      <Comment>유저번호</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="747" parent="183" name="FK_Project_TO_ProjectMember">
+      <ColNames>Project_no</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="748" parent="183" name="FK_Users_TO_ProjectMember">
+      <ColNames>User_no</ColNames>
+      <Type>btree</Type>
+    </index>
+    <foreign-key id="749" parent="183" name="FK_Project_TO_ProjectMember">
+      <ColNames>Project_no</ColNames>
+      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefTableName>Project</RefTableName>
+      <RefColNames>Project_no</RefColNames>
+    </foreign-key>
+    <foreign-key id="750" parent="183" name="FK_Users_TO_ProjectMember">
+      <ColNames>User_no</ColNames>
+      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefTableName>Users</RefTableName>
+      <RefColNames>User_no</RefColNames>
+    </foreign-key>
+    <column id="751" parent="184" name="Score_no">
+      <Position>1</Position>
+      <Comment>점수코드</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="752" parent="184" name="Curriculum_no">
+      <Position>2</Position>
+      <Comment>커리큘럼코드</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="753" parent="184" name="SubInStep_no">
+      <Position>3</Position>
+      <Comment>단계 내 과목 코드</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="754" parent="184" name="User_no">
+      <Position>4</Position>
+      <Comment>유저번호</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="755" parent="184" name="Score">
+      <Position>5</Position>
+      <Comment>점수</Comment>
+      <DataType>int(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="756" parent="184" name="File_no">
+      <Position>6</Position>
+      <Comment>파일 번호</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="757" parent="184" name="FK_Curriculum_TO_Score">
+      <ColNames>Curriculum_no</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="758" parent="184" name="FK_SubInStep_TO_Score">
+      <ColNames>SubInStep_no</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="759" parent="184" name="FK_Users_TO_Score">
+      <ColNames>User_no</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="760" parent="184" name="FK_File_TO_Score">
+      <ColNames>File_no</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="761" parent="184" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Score_no</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="762" parent="184" name="FK_Curriculum_TO_Score">
+      <ColNames>Curriculum_no</ColNames>
+      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefTableName>Curriculum</RefTableName>
+      <RefColNames>Curriculum_no</RefColNames>
+    </foreign-key>
+    <foreign-key id="763" parent="184" name="FK_SubInStep_TO_Score">
+      <ColNames>SubInStep_no</ColNames>
+      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefTableName>SubInStep</RefTableName>
+      <RefColNames>SubInStep_no</RefColNames>
+    </foreign-key>
+    <foreign-key id="764" parent="184" name="FK_Users_TO_Score">
+      <ColNames>User_no</ColNames>
+      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefTableName>Users</RefTableName>
+      <RefColNames>User_no</RefColNames>
+    </foreign-key>
+    <foreign-key id="765" parent="184" name="FK_File_TO_Score">
+      <ColNames>File_no</ColNames>
+      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefTableName>File</RefTableName>
+      <RefColNames>File_no</RefColNames>
+    </foreign-key>
+    <column id="766" parent="185" name="Step_no">
+      <Position>1</Position>
+      <Comment>단계 코드</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="767" parent="185" name="Package_no">
+      <Position>2</Position>
+      <Comment>패키지 코드</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="768" parent="185" name="StepName">
+      <Position>3</Position>
+      <Comment>단계 이름</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="769" parent="185" name="Level">
+      <Position>4</Position>
+      <Comment>몇단계</Comment>
+      <DataType>int(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="770" parent="185" name="FK_Package_TO_StepInPack">
+      <ColNames>Package_no</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="771" parent="185" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Step_no</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="772" parent="185" name="FK_Package_TO_StepInPack">
+      <ColNames>Package_no</ColNames>
+      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefTableName>Package</RefTableName>
+      <RefColNames>Package_no</RefColNames>
+    </foreign-key>
+    <column id="773" parent="186" name="SubInStep_no">
+      <Position>1</Position>
+      <Comment>단계 내 과목 코드</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="774" parent="186" name="Step_no">
+      <Position>2</Position>
+      <Comment>단계 코드</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="775" parent="186" name="Subject_no">
+      <Position>3</Position>
+      <Comment>과목코드</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="776" parent="186" name="Content">
+      <Position>4</Position>
+      <Comment>과목 내용</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="777" parent="186" name="SubHour">
+      <Position>5</Position>
+      <Comment>과목 시간</Comment>
+      <DataType>int(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="778" parent="186" name="File_no">
+      <Position>6</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="779" parent="186" name="FK_StepInPack_TO_SubInStep">
+      <ColNames>Step_no</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="780" parent="186" name="FK_Subject_TO_SubInStep">
+      <ColNames>Subject_no</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="781" parent="186" name="FK_File_TO_SubInStep">
+      <ColNames>File_no</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="782" parent="186" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>SubInStep_no</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="783" parent="186" name="FK_StepInPack_TO_SubInStep">
+      <ColNames>Step_no</ColNames>
+      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefTableName>StepInPack</RefTableName>
+      <RefColNames>Step_no</RefColNames>
+    </foreign-key>
+    <foreign-key id="784" parent="186" name="FK_Subject_TO_SubInStep">
+      <ColNames>Subject_no</ColNames>
+      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefTableName>Subject</RefTableName>
+      <RefColNames>Subject_no</RefColNames>
+    </foreign-key>
+    <foreign-key id="785" parent="186" name="FK_File_TO_SubInStep">
+      <ColNames>File_no</ColNames>
+      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefTableName>File</RefTableName>
+      <RefColNames>File_no</RefColNames>
+    </foreign-key>
+    <column id="786" parent="187" name="Subject_no">
+      <Position>1</Position>
+      <Comment>과목코드</Comment>
+      <DataType>int(5)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="787" parent="187" name="SubjectCate_no">
+      <Position>2</Position>
+      <Comment>과목 카테고리 코드</Comment>
+      <DataType>int(5)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="788" parent="187" name="SubjectName">
+      <Position>3</Position>
+      <Comment>과목 이름</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="789" parent="187" name="Outline">
+      <Position>4</Position>
+      <Comment>과목 개요</Comment>
+      <DataType>text|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="790" parent="187" name="DelStatus">
+      <Position>5</Position>
+      <Comment>삭제여부</Comment>
+      <DataType>varchar(5)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="791" parent="187" name="FK_SubjectCate_TO_Subject">
+      <ColNames>SubjectCate_no</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="792" parent="187" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Subject_no</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="793" parent="187" name="FK_SubjectCate_TO_Subject">
+      <ColNames>SubjectCate_no</ColNames>
+      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefTableName>SubjectCate</RefTableName>
+      <RefColNames>SubjectCate_no</RefColNames>
+    </foreign-key>
+    <column id="794" parent="188" name="SubjectCate_no">
+      <Position>1</Position>
+      <Comment>과목 카테고리 코드</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="795" parent="188" name="CateName">
+      <Position>2</Position>
+      <Comment>카테고리 이름</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="796" parent="188" name="GroupCode">
+      <Position>3</Position>
+      <Comment>그룹코드(과목)</Comment>
+      <DataType>int(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="797" parent="188" name="ParentCode">
+      <Position>4</Position>
+      <Comment>부모코드(과목)</Comment>
+      <DataType>int(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="798" parent="188" name="Depth">
+      <Position>5</Position>
+      <Comment>깊이(과목)</Comment>
+      <DataType>int(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="799" parent="188" name="OrderCode">
+      <Position>6</Position>
+      <Comment>순서</Comment>
+      <DataType>int(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="800" parent="188" name="DelStatus">
+      <Position>7</Position>
+      <Comment>상태값</Comment>
+      <DataType>varchar(5)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="801" parent="188" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>SubjectCate_no</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="802" parent="189" name="Survey_no">
+      <Position>1</Position>
+      <Comment>질문지 코드</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="803" parent="189" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Survey_no</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="804" parent="190" name="UserCareer_no">
+      <Position>1</Position>
+      <Comment>새 컬럼</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="805" parent="190" name="User_no">
+      <Position>2</Position>
+      <Comment>유저번호</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="806" parent="190" name="StartDate">
+      <Position>3</Position>
+      <Comment>입사일</Comment>
+      <DataType>date|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="807" parent="190" name="EndDate">
+      <Position>4</Position>
+      <Comment>퇴사일</Comment>
+      <DataType>date|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="808" parent="190" name="CompName">
+      <Position>5</Position>
+      <Comment>주체(회사, 공모전,학교)</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="809" parent="190" name="DevPart">
+      <Position>6</Position>
+      <Comment>주업무/개발프로그램</Comment>
+      <DataType>text|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="810" parent="190" name="Role">
+      <Position>7</Position>
+      <Comment>직위(직무)</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="811" parent="190" name="TelePhone">
+      <Position>8</Position>
+      <Comment>회사전화</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="812" parent="190" name="CompanyAddress">
+      <Position>9</Position>
+      <Comment>회사주소</Comment>
+      <DataType>varchar(2000)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="813" parent="190" name="State">
+      <Position>10</Position>
+      <Comment>재직여부</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="814" parent="190" name="Department">
+      <Position>11</Position>
+      <Comment>부서</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="815" parent="190" name="FK_Users_TO_UserCareer">
+      <ColNames>User_no</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="816" parent="190" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>UserCareer_no</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="817" parent="190" name="FK_Users_TO_UserCareer">
+      <ColNames>User_no</ColNames>
+      <RefSchemaName>sungwoo_test</RefSchemaName>
+      <RefTableName>Users</RefTableName>
+      <RefColNames>User_no</RefColNames>
+    </foreign-key>
+    <column id="818" parent="191" name="UserScholarship_no">
+      <Position>1</Position>
+      <Comment>새 컬럼</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="819" parent="191" name="User_no">
+      <Position>2</Position>
+      <Comment>유저번호</Comment>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="820" parent="191" name="StartDate">
+      <Position>3</Position>
+      <Comment>기간(부터)</Comment>
+      <DataType>varchar(15)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="821" parent="191" name="EndDate">
+      <Position>4</Position>
+      <Comment>기간(까지)</Comment>
+      <DataType>varchar(15)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="822" parent="191" name="School">
+      <Position>5</Position>
+      <Comment>학교</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="823" parent="191" name="State">
+      <Position>6</Position>
+      <Comment>졸업여부(상태)</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="824" parent="191" name="Location">
+      <Position>7</Position>
+      <Comment>소재지</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="825" parent="191" name="Degree">
+      <Position>8</Position>
+      <Comment>학위</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="826" parent="191" name="Major">
+      <Position>9</Position>
+      <Comment>전공</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="827" parent="191" name="SubMajor">
+      <Position>10</Position>
+      <Comment>부전공</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="828" parent="191" name="FK_Users_TO_UserScholarship">
+      <ColNames>User_no</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="829" parent="191" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>UserScholarship_no</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="830" parent="191" name="FK_Users_TO_UserScholarship">
       <ColNames>User_no</ColNames>
       <RefSchemaName>sungwoo_test</RefSchemaName>
       <RefTableName>Users</RefTableName>
       <RefColNames>User_no</RefColNames>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <column id="471" parent="165" name="UserTraining_no">
+    <column id="831" parent="192" name="UserTraining_no">
       <Position>1</Position>
       <Comment>새 컬럼</Comment>
       <DataType>int(11)|0s</DataType>
@@ -2425,59 +4471,59 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="472" parent="165" name="User_no">
+    <column id="832" parent="192" name="User_no">
       <Position>2</Position>
       <Comment>유저번호</Comment>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="473" parent="165" name="StartDate">
+    <column id="833" parent="192" name="StartDate">
       <Position>3</Position>
       <Comment>기간(부터)</Comment>
       <DataType>date|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="474" parent="165" name="EndDate">
+    <column id="834" parent="192" name="EndDate">
       <Position>4</Position>
       <Comment>기간(까지)</Comment>
       <DataType>date|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="475" parent="165" name="EduCenterName">
+    <column id="835" parent="192" name="EduCenterName">
       <Position>5</Position>
       <Comment>교육기관</Comment>
       <DataType>varchar(500)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="476" parent="165" name="EduCourseName">
+    <column id="836" parent="192" name="EduCourseName">
       <Position>6</Position>
       <Comment>교육과정</Comment>
       <DataType>varchar(500)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="477" parent="165" name="Content">
+    <column id="837" parent="192" name="Content">
       <Position>7</Position>
       <Comment>주요교육내용</Comment>
       <DataType>text|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="478" parent="165" name="FK_Users_TO_UserTrainning">
+    <index id="838" parent="192" name="FK_Users_TO_UserTrainning">
       <ColNames>User_no</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="479" parent="165" name="PRIMARY">
+    <key id="839" parent="192" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>UserTraining_no</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="480" parent="165" name="FK_Users_TO_UserTrainning">
+    <foreign-key id="840" parent="192" name="FK_Users_TO_UserTrainning">
       <ColNames>User_no</ColNames>
       <RefSchemaName>sungwoo_test</RefSchemaName>
       <RefTableName>Users</RefTableName>
       <RefColNames>User_no</RefColNames>
     </foreign-key>
-    <column id="481" parent="166" name="User_no">
+    <column id="841" parent="193" name="User_no">
       <Position>1</Position>
       <Comment>유저번호</Comment>
       <DataType>int(11)|0s</DataType>
@@ -2485,283 +4531,283 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="482" parent="166" name="AuthCode">
+    <column id="842" parent="193" name="AuthCode">
       <Position>2</Position>
       <Comment>권한코드</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="483" parent="166" name="NameHan">
+    <column id="843" parent="193" name="NameHan">
       <Position>3</Position>
       <Comment>한글이름</Comment>
       <DataType>varchar(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="484" parent="166" name="NameEng">
+    <column id="844" parent="193" name="NameEng">
       <Position>4</Position>
       <Comment>영어이름</Comment>
       <DataType>varchar(30)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="485" parent="166" name="LoginID">
+    <column id="845" parent="193" name="LoginID">
       <Position>5</Position>
       <Comment>아이디</Comment>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="486" parent="166" name="Password">
+    <column id="846" parent="193" name="Password">
       <Position>6</Position>
       <Comment>패스워드</Comment>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="487" parent="166" name="BirthDate">
+    <column id="847" parent="193" name="BirthDate">
       <Position>7</Position>
       <Comment>생년월일</Comment>
       <DataType>char(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="488" parent="166" name="StudResNum">
+    <column id="848" parent="193" name="StudResNum">
       <Position>8</Position>
       <Comment>주민등록번호</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="489" parent="166" name="Gender">
+    <column id="849" parent="193" name="Gender">
       <Position>9</Position>
       <DataType>tinyint(1)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="490" parent="166" name="Address">
+    <column id="850" parent="193" name="Address">
       <Position>10</Position>
       <Comment>현주소</Comment>
       <DataType>varchar(300)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="491" parent="166" name="FamilyAddress">
+    <column id="851" parent="193" name="FamilyAddress">
       <Position>11</Position>
       <Comment>등본주소</Comment>
       <DataType>varchar(300)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="492" parent="166" name="PostNum">
+    <column id="852" parent="193" name="PostNum">
       <Position>12</Position>
       <Comment>우편번호</Comment>
       <DataType>varchar(7)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="493" parent="166" name="Cellphone">
+    <column id="853" parent="193" name="Cellphone">
       <Position>13</Position>
       <Comment>핸드폰번호</Comment>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="494" parent="166" name="Telephone">
+    <column id="854" parent="193" name="Telephone">
       <Position>14</Position>
       <Comment>전화번호</Comment>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="495" parent="166" name="Email">
+    <column id="855" parent="193" name="Email">
       <Position>15</Position>
       <Comment>이메일</Comment>
       <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="496" parent="166" name="HomePage">
+    <column id="856" parent="193" name="HomePage">
       <Position>16</Position>
       <Comment>홈페이지</Comment>
       <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="497" parent="166" name="Bank">
+    <column id="857" parent="193" name="Bank">
       <Position>17</Position>
       <Comment>은행명</Comment>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="498" parent="166" name="Depositor">
+    <column id="858" parent="193" name="Depositor">
       <Position>18</Position>
       <Comment>예금주</Comment>
       <DataType>varchar(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="499" parent="166" name="AccountNum">
+    <column id="859" parent="193" name="AccountNum">
       <Position>19</Position>
       <Comment>계좌번호</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="500" parent="166" name="MillArm">
+    <column id="860" parent="193" name="MillArm">
       <Position>20</Position>
       <Comment>병과</Comment>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="501" parent="166" name="MillRank">
+    <column id="861" parent="193" name="MillRank">
       <Position>21</Position>
       <Comment>계급</Comment>
       <DataType>varchar(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="502" parent="166" name="MillEnrollDate">
+    <column id="862" parent="193" name="MillEnrollDate">
       <Position>22</Position>
       <Comment>입대일</Comment>
       <DataType>varchar(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="503" parent="166" name="MillDischargeDate">
+    <column id="863" parent="193" name="MillDischargeDate">
       <Position>23</Position>
       <Comment>전역일</Comment>
       <DataType>varchar(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="504" parent="166" name="MillIncompletReason">
+    <column id="864" parent="193" name="MillIncompletReason">
       <Position>24</Position>
       <Comment>미필사유</Comment>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="505" parent="166" name="Language">
+    <column id="865" parent="193" name="Language">
       <Position>25</Position>
       <Comment>어학</Comment>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="506" parent="166" name="OS">
+    <column id="866" parent="193" name="OS">
       <Position>26</Position>
       <Comment>사용OS</Comment>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="507" parent="166" name="ProLang">
+    <column id="867" parent="193" name="ProLang">
       <Position>27</Position>
       <Comment>사용언어</Comment>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="508" parent="166" name="Magazine">
+    <column id="868" parent="193" name="Magazine">
       <Position>28</Position>
       <Comment>정기구독잡지</Comment>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="509" parent="166" name="Newspaper">
+    <column id="869" parent="193" name="Newspaper">
       <Position>29</Position>
       <Comment>정기구독신문</Comment>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="510" parent="166" name="AfterPlan">
+    <column id="870" parent="193" name="AfterPlan">
       <Position>30</Position>
       <Comment>수료후희망</Comment>
       <DataType>varchar(2000)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="511" parent="166" name="Motive">
+    <column id="871" parent="193" name="Motive">
       <Position>31</Position>
       <Comment>지원동기</Comment>
       <DataType>varchar(2000)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="512" parent="166" name="LearningContent">
+    <column id="872" parent="193" name="LearningContent">
       <Position>32</Position>
       <Comment>학습내용</Comment>
       <DataType>varchar(2000)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="513" parent="166" name="ConsultContent">
+    <column id="873" parent="193" name="ConsultContent">
       <Position>33</Position>
       <Comment>상담내역</Comment>
       <DataType>varchar(2000)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="514" parent="166" name="Thesis">
+    <column id="874" parent="193" name="Thesis">
       <Position>34</Position>
       <Comment>학위논문 제목/ 내용</Comment>
       <DataType>varchar(2000)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="515" parent="166" name="File_no">
+    <column id="875" parent="193" name="File_no">
       <Position>35</Position>
       <Comment>파일 번호</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="516" parent="166" name="FK_File_TO_Users">
+    <index id="876" parent="193" name="FK_File_TO_Users">
       <ColNames>File_no</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="517" parent="166" name="PRIMARY">
+    <key id="877" parent="193" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>User_no</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="518" parent="166" name="FK_File_TO_Users">
+    <foreign-key id="878" parent="193" name="FK_File_TO_Users">
       <ColNames>File_no</ColNames>
       <RefSchemaName>sungwoo_test</RefSchemaName>
       <RefTableName>File</RefTableName>
       <RefColNames>File_no</RefColNames>
     </foreign-key>
-    <column id="519" parent="167" name="StudID">
+    <column id="879" parent="194" name="StudID">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="520" parent="167" name="SeqNum">
+    <column id="880" parent="194" name="SeqNum">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="521" parent="167" name="VolunteerDate">
+    <column id="881" parent="194" name="VolunteerDate">
       <Position>3</Position>
       <DataType>datetime|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="522" parent="167" name="InterviewDate">
+    <column id="882" parent="194" name="InterviewDate">
       <Position>4</Position>
       <DataType>varchar(8)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="523" parent="167" name="InterviewManner">
+    <column id="883" parent="194" name="InterviewManner">
       <Position>5</Position>
       <DataType>text|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="524" parent="167" name="InterviewDescription">
+    <column id="884" parent="194" name="InterviewDescription">
       <Position>6</Position>
       <DataType>text|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="525" parent="167" name="InterViewOpinion">
+    <column id="885" parent="194" name="InterViewOpinion">
       <Position>7</Position>
       <DataType>text|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="526" parent="167" name="CompReputation">
+    <column id="886" parent="194" name="CompReputation">
       <Position>8</Position>
       <DataType>text|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="527" parent="167" name="isPass">
+    <column id="887" parent="194" name="isPass">
       <Position>9</Position>
       <DataType>bit(1)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="528" parent="167" name="WriteDate">
+    <column id="888" parent="194" name="WriteDate">
       <Position>10</Position>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="529" parent="167" name="StudName">
+    <column id="889" parent="194" name="StudName">
       <Position>11</Position>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="530" parent="167" name="StudTermNum">
+    <column id="890" parent="194" name="StudTermNum">
       <Position>12</Position>
       <DataType>varchar(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="my-career">
+
+    <select id="pushCareer" parameterType="CareerVo">
+        <![CDATA[
+                 insert into bitacademy_test.UserCareer (
+                               User_no, StartDate, EndDate, CompName, DevPart, Role, TelePhone, CompanyAddress, State, Department)
+                         values (#{user_no}, #{startDate}, #{endDate}, #{compName}, #{devPart}, #{role}, #{telePhone}, #{companyAddress}, #{state}, #{department})
+        ]]>
+
+
+    </select>
+</mapper>
