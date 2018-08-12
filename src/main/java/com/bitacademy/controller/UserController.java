@@ -42,4 +42,9 @@ public class UserController {
     private void getPushTraining(){
         userService.getPushTraining();
     }
+
+    @RequestMapping(value = "/modGender")
+    public void modGender (){
+        userService.modGender();
+    }
 }

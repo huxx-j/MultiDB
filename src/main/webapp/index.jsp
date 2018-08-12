@@ -10,5 +10,7 @@
 <a href="/getPushLicense">자격정보이동</a><br/>
 <a href="/getPushCareer">경력정보이동</a><br/>
 <a href="/getPushTraining">훈련정보이동</a><br/>
+<a href="/modGender">성별 수정</a><br/>
+
 </body>
 </html>

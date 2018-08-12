@@ -184,4 +184,26 @@ public class UserService {
         }
         System.out.println(pushCount + "개 데이터 입력 완료" + empty + "개 User_no 없음");
     }
+
+    public void modGender() {
+        int pushCount = 0;
+        int empty = 0;
+        for (int i = 27000; i < 60000; i += 1000) {
+            List<UsersVo> list = userDao.getGenderInfo(i);
+
+            if (list.size() != 0) {
+                for (UsersVo usersVo : list) {
+                    if (!usersVo.getStudResNum().equals("1") && !usersVo.getStudResNum().equals("2") && !usersVo.getStudResNum().equals("3") && !usersVo.getStudResNum().equals("4") && !usersVo.getStudResNum().equals("5") && !usersVo.getStudResNum().equals("6")) {
+                        usersVo.setStudResNum("9");
+                    }
+                    System.out.print("User_no > " + usersVo.getUser_no() + "  //  Gender > " + usersVo.getStudResNum() + "  //  ");
+                    pushCount += userDao.upGender(usersVo);
+                    System.out.println(pushCount + "개의 데이터가 입력 되었습니다.");
+                }
+            } else {
+                break;
+            }
+        }
+
+    }
 }

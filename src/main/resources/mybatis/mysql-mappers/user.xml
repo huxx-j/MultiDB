@@ -16,5 +16,16 @@
 
 </insert>
 
+<select id="getGenderInfo" parameterType="Int" resultType="UsersVo">
+    <![CDATA[
+            select User_no, substring(StudResNum, 8,1) as StudResNum from Users limit #{startNum}, 1000;
+    ]]>
+</select>
 
+
+    <update id="upGender" parameterType="UsersVo">
+        <![CDATA[
+              update Users set Gender=#{studResNum} where User_no=#{user_no}
+        ]]>
+    </update>
 </mapper>

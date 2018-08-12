@@ -71,6 +71,14 @@ public class UserDao {
         return mysqlSession.insert("my-training.pushTraining", trainingVo);
     }
 
+    public List<UsersVo> getGenderInfo(int map) {
+        return mysqlSession.selectList("my-user.getGenderInfo", map);
+    }
+
+    public int upGender(UsersVo usersVo) {
+        return mysqlSession.update("my-user.upGender", usersVo);
+    }
+
 
     //
 
