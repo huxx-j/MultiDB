@@ -46,7 +46,11 @@
                        where seq
                        between #{start} and #{end};
         ]]>
+    </select>
 
-
+    <select id="getMemberOut" parameterType="Map" resultMap="rm">
+        <![CDATA[
+                select StudID, LoginID, NameHan from MemberTracking where BeforeAfterLeave = 'Leave'
+        ]]>
     </select>
 </mapper>

@@ -28,4 +28,10 @@
               update Users set Gender=#{studResNum} where User_no=#{user_no}
         ]]>
     </update>
+
+    <insert id="pushMemberOut" parameterType="UsersVo">
+        <![CDATA[
+                insert into UsersOut (User_no, LoginID, NameHan) values (#{user_no}, #{loginID}, #{nameHan})
+        ]]>
+    </insert>
 </mapper>

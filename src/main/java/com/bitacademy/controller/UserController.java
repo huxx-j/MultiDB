@@ -47,4 +47,9 @@ public class UserController {
     public void modGender (){
         userService.modGender();
     }
+
+    @RequestMapping(value = "/getPushMemberOut")
+    public void getPushMemberOut(){
+        userService.getPushMemberOut();
+    }
 }

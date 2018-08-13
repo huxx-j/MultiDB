@@ -206,4 +206,25 @@ public class UserService {
         }
 
     }
+
+    public void getPushMemberOut() {
+        int pushCount = 0;
+        int empty = 0;
+        for (int i = 1; i < 60000; i += 1000) {
+            Map<String, Integer> map = new HashMap<>();
+            map.put("start", i);
+            map.put("end", i+999);
+            List<UsersVo> list = userDao.getMemberOut(map);
+
+            if (list.size() != 0) {
+                for (UsersVo usersVo : list) {
+                    System.out.print("User_no > " + usersVo.getUser_no() + "  //  ");
+                    pushCount += userDao.pushMemberOut(usersVo);
+                    System.out.println(pushCount + "개의 데이터가 입력 되었습니다.");
+                }
+            } else {
+                break;
+            }
+        }
+    }
 }

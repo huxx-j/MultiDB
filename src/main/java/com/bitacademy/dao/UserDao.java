@@ -79,8 +79,12 @@ public class UserDao {
         return mysqlSession.update("my-user.upGender", usersVo);
     }
 
+    public List<UsersVo> getMemberOut(Map<String,Integer> map) {
+        return mssqlSession.selectList("ms-user.getMemberOut", map);
+    }
 
-    //
 
-
+    public int pushMemberOut(UsersVo usersVo) {
+        return mysqlSession.insert("my-user.pushMemberOut", usersVo);
+    }
 }
