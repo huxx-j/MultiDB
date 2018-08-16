@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ms-pamphlet">
+
+    <select id="getPamphlet" parameterType="HashMap" resultType="PamphletVo">
+        <![CDATA[
+                SELECT seq, Term, GroupNum, TermNum, Category, Subject, str1, str2, str3, str4, str5, strEtc
+                from (
+                       SELECT ROW_NUMBER() over (order by TermNum) as seq,
+                               Term, GroupNum, TermNum, Category, Subject, str1, str2, str3, str4, str5, strEtc
+                       from dbo.ProjectPamphlet) a
+                       where seq
+                       between #{start} and #{end}
+        ]]>
+    </select>
+</mapper>
