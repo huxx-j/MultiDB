@@ -12,5 +12,6 @@
 <a href="/getPushTraining">훈련정보이동</a><br/>
 <a href="/modGender">성별 수정</a><br/>
 <a href="/getPushMemberOut">탈퇴회원정보이동</a><br/>
+<a href="/getPushAdress">회원 주소 업데이트</a><br/>
 </body>
 </html>

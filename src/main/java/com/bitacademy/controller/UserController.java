@@ -52,4 +52,9 @@ public class UserController {
     public void getPushMemberOut(){
         userService.getPushMemberOut();
     }
+
+    @RequestMapping(value = "/getPushAdress")
+    public void getPushAdress(){
+        userService.getPushAdress();
+    }
 }

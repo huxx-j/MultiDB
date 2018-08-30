@@ -87,4 +87,13 @@ public class UserDao {
     public int pushMemberOut(UsersVo usersVo) {
         return mysqlSession.insert("my-user.pushMemberOut", usersVo);
     }
+
+    public List<UsersVo> getAdress(Map<String,Integer> map) {
+        return mssqlSession.selectList("ms-user.getAdress", map);
+    }
+
+    public int pushAdress(UsersVo usersVo) {
+        return mysqlSession.insert("my-user.pushAdress", usersVo);
+
+    }
 }

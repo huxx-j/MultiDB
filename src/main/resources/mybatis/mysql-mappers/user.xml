@@ -34,4 +34,10 @@
                 insert into UsersOut (User_no, LoginID, NameHan) values (#{user_no}, #{loginID}, #{nameHan})
         ]]>
     </insert>
+
+    <update id="pushAdress" parameterType="UsersVo">
+        <![CDATA[
+              update Users set PostNum=#{postNum}, Address=#{address}, FamilyPostNum=#{familyPostNum}, FamilyAddress=#{familyAddress}, BitLetter=#{bitLetter} where User_no=#{user_no}
+        ]]>
+    </update>
 </mapper>

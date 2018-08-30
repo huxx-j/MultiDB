@@ -10,11 +10,11 @@
         <property name="applicationName" value="DataGrip" />
       </driver-properties>
     </data-source>
-    <data-source source="LOCAL" name="sungwoo_test@222.106.22.81" uuid="338dd77b-1c14-420c-bf4f-11e4b3cbfcb0">
+    <data-source source="LOCAL" name="bitacademy_test@222.106.22.81" uuid="338dd77b-1c14-420c-bf4f-11e4b3cbfcb0">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://222.106.22.81:3306/sungwoo_test</jdbc-url>
+      <jdbc-url>jdbc:mysql://222.106.22.81:3306/bitacademy_test</jdbc-url>
       <driver-properties>
         <property name="autoReconnect" value="true" />
         <property name="zeroDateTimeBehavior" value="convertToNull" />

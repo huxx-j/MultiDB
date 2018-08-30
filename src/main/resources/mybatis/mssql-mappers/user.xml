@@ -4,6 +4,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="ms-user">
     <resultMap id="rm" type="UsersVo">
+        <result column="seq" property="seq"/>
         <result column="StudID" property="user_no" />
         <result column="LoginID" property="loginID" />
         <result column="Password" property="password" />
@@ -13,6 +14,7 @@
         <result column="StudResNum" property="studResNum" />
         <result column="HomePage" property="homePage" />
         <result column="Email" property="email" />
+        <result column="PostNum" property="familyPostNum" />
         <result column="Address" property="familyAddress" />
         <result column="NowPostNum" property="postNum" />
         <result column="NowAddress" property="address" />
@@ -28,6 +30,7 @@
         <result column="Paper" property="thesis" />
         <result column="Memo" property="consultContent" />
         <result column="BirthDate" property="birthDate" />
+        <result column="bitletter" property="bitLetter" />
     </resultMap>
 
     <select id="getUserInfo" parameterType="HashMap" resultMap="rm">
@@ -51,6 +54,18 @@
     <select id="getMemberOut" parameterType="Map" resultMap="rm">
         <![CDATA[
                 select StudID, LoginID, NameHan from MemberTracking where BeforeAfterLeave = 'Leave'
+        ]]>
+    </select>
+
+    <select id="getAdress" parameterType="HashMap" resultMap="rm">
+        <![CDATA[
+                 select seq, StudID, PostNum, Address, NowPostNum, NowAddress, bitletter
+                 from(
+                       select ROW_NUMBER() over (order by StudID) as seq, StudID,
+                               PostNum, Address, NowPostNum, NowAddress, bitletter
+                       from dbo.Member) a
+                       where seq
+                       between #{start} and #{end};
         ]]>
     </select>
 </mapper>

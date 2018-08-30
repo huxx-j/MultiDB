@@ -1,6 +1,7 @@
 package com.bitacademy.vo;
 
 public class UsersVo {
+    private int seq;
     private int user_no;
     private int authCode;
     private String nameHan;
@@ -10,9 +11,10 @@ public class UsersVo {
     private String birthDate;
     private String studResNum;
     private String gender;
-    private String address;
-    private String familyAddress;
     private String postNum;
+    private String address;
+    private String familyPostNum;
+    private String familyAddress;
     private String cellphone;
     private String telephone;
     private String email;
@@ -36,6 +38,7 @@ public class UsersVo {
     private String consultContent;
     private String thesis;
     private int file_no;
+    private String bitLetter;
 
     public UsersVo() {
     }
@@ -76,6 +79,30 @@ public class UsersVo {
         this.consultContent = consultContent;
         this.thesis = thesis;
         this.file_no = file_no;
+    }
+
+    public String getBitLetter() {
+        return bitLetter;
+    }
+
+    public void setBitLetter(String bitLetter) {
+        this.bitLetter = bitLetter;
+    }
+
+    public int getSeq() {
+        return seq;
+    }
+
+    public void setSeq(int seq) {
+        this.seq = seq;
+    }
+
+    public String getFamilyPostNum() {
+        return familyPostNum;
+    }
+
+    public void setFamilyPostNum(String familyPostNum) {
+        this.familyPostNum = familyPostNum;
     }
 
     public int getUser_no() {
@@ -370,9 +397,10 @@ public class UsersVo {
                 ", birthDate='" + birthDate + '\'' +
                 ", studResNum='" + studResNum + '\'' +
                 ", gender='" + gender + '\'' +
-                ", address='" + address + '\'' +
-                ", familyAddress='" + familyAddress + '\'' +
                 ", postNum='" + postNum + '\'' +
+                ", address='" + address + '\'' +
+                ", familyPostNum='" + familyPostNum + '\'' +
+                ", familyAddress='" + familyAddress + '\'' +
                 ", cellphone='" + cellphone + '\'' +
                 ", telephone='" + telephone + '\'' +
                 ", email='" + email + '\'' +
